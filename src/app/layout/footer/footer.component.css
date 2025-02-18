@@ -1,0 +1,9 @@
+.router-links {
+    cursor: pointer;
+    color: var(--primary-color-500);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--success-color-100);
+    }
+}

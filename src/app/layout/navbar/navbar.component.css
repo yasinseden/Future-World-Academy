@@ -1,0 +1,7 @@
+.nav-bar-links {
+    cursor: pointer;
+
+    &:hover {
+        color: var(--primary-color-500);
+    }
+}

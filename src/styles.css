@@ -1,6 +1,113 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --primary-color-100: #91dbf6;
+    --primary-color-200: #74c7ea;
+    --primary-color-300: #57b3dd;
+    --primary-color-500: #1e8bc4;
+    --primary-color-400: #3b9fd1;
+    --primary-color-600: #1a79ad;
+    --primary-color-700: #155e8a;
+    --primary-color-800: #114468;
+    --primary-color-900: #0c2a46;
+
+    --secondary-color-100: #f8ddbc;
+    --secondary-color-200: #f7cc91;
+    --secondary-color-300: #f5bc67;
+    --secondary-color-400: #f4ac3d;
+    --secondary-color-500: #f39c12;
+    --secondary-color-600: #db8b10;
+    --secondary-color-700: #b7710e;
+    --secondary-color-800: #92560b;
+    --secondary-color-900: #6e3c09;
+
+    --success-color-100: #9fd6ac;
+    --success-color-200: #81cc99;
+    --success-color-300: #63c286;
+    --success-color-400: #45b873;
+    --success-color-500: #27ae60;
+    --success-color-600: #239b56;
+    --success-color-700: #1d8046;
+    --success-color-800: #176636;
+    --success-color-900: #114d26;
+
+    --warning-color-100: #fbcabd;
+    --warning-color-200: #f6b796;
+    --warning-color-300: #f1a46f;
+    --warning-color-400: #eb9148;
+    --warning-color-500: #e67e22;
+    --warning-color-600: #cf711f;
+    --warning-color-700: #aa5e19;
+    --warning-color-800: #854a14;
+    --warning-color-900: #60360f;
+
+    --danger-color-100: #edaeaa;
+    --danger-color-200: #e28581;
+    --danger-color-300: #d76b65;
+    --danger-color-400: #cc5248;
+    --danger-color-500: #c0392b;
+    --danger-color-600: #a93226;
+    --danger-color-700: #872a20;
+    --danger-color-800: #641f18;
+    --danger-color-900: #411410;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgb(210, 210, 210) !important; */
+}
+
+.custom-btn-primary {
+    background-color: var(--primary-color-500) !important;
+
+    &:hover {
+        background-color: var(--primary-color-200) !important;
+    }
+}
+
+.custom-box {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-box::before,
+.custom-box::after,
+.custom-box span::before {
+    content: "";
+    position: absolute;
+    background-color: var(--secondary-color-200);
+}
+
+/* Top short line */
+.custom-box::before {
+    left: -1rem;
+    top: -0.75rem;
+    width: 65%; /* Adjust length */
+    height: 7.5px; /* Adjust thickness */
+}
+
+/* Bottom short line */
+.custom-box::after {
+    bottom: -0.75rem;
+    right: 2rem;
+    width: 65%; /* Adjust length */
+    height: 7.5px;
+}
+
+/* Left short vertical line */
+.custom-box span::before {
+    left: -1.75rem;
+    bottom: -1rem;
+    width: 7.5px;
+    height: 65%; /* Adjust length */
+}
+
+.custom-radius {
+    border-radius: 1rem;
+    overflow: hidden;
 }

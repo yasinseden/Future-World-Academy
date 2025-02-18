@@ -1,0 +1,117 @@
+<!-- Upper begin -->
+<div class="upper-field position-relative bg-dark mb-5" style="height: 95vh;">
+    <video #videoEl muted loop autoplay style="width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+        <source src="../assets/videos/home-page-background-video.mp4" type="video/mp4">
+    </video>
+    <div class="position-absolute top-50 start-0 translate-middle-y p-3 text-light bg-dark"
+        style="width: 35%; --bs-bg-opacity: .3; margin-left: 7.5rem; border-radius: 1rem;">
+        <div class="py-3">
+            <span class="fw-bolder fs-1 p-1" style="font-style: italic;">
+                Empowering Minds, Shaping the Future
+            </span>
+        </div>
+        <div>
+            <span class="fs-5 fw-bold p-1">
+                Welcome to Future World Academy—where knowledge meets opportunity! Our international training and
+                development programs equip you with the skills and insights to drive positive change. From
+                sustainability to leadership, innovation to teamwork, we prepare you for a future without limits. Join a
+                global community of learners and changemakers. Your journey starts here!
+            </span>
+        </div>
+        <div class="py-3">
+            <button class="btn p-3 text-light fw-bold custom-btn-primary">Explore
+                Courses</button>
+        </div>
+    </div>
+</div>
+<!-- Upper end -->
+<!-- about us begin -->
+<div class="container d-flex my-5 py-5 align-items-center">
+    <div class="w-50 d-flex flex-column">
+        <div class="custom-box mb-4 pb-1 d-flex flex-column">
+            <span class="fw-bolder fs-1">About Us</span>
+            <span class="fs-3">
+                Future World Academy was founded in 2010 and arises from the desire of a group of people with a great
+                experience
+                in the field of international training. We offer a variety of Erasmus+ Staff Mobility Courses and
+                Vocational
+                Training Programs. Future World Academy is the only address where experience, expertise, excellence and
+                innovation meet.
+            </span>
+        </div>
+        <button class="btn py-3 px-1 mt-2 text-light fw-bold fs-5 w-25 custom-btn-primary"
+            (click)="routeToAboutUs()">More Information</button>
+    </div>
+    <div class="w-50 d-flex justify-content-end">
+        <img src="../assets/images/home-page-about-us.jpg" width="85%" class="custom-radius">
+    </div>
+</div>
+<!-- about us end -->
+<!-- courses begin -->
+<div class="container my-5 py-5 align-items-center">
+    <div class="custom-box mb-5 py-2 w-50 d-flex flex-column">
+        <span class="fw-bolder fs-1">Our Courses</span>
+        <span class="fs-3">Choose from our wide variety of courses in four different categories</span>
+    </div>
+    <div class="row">
+        <div class="col-3 position-relative">
+            <img class="education-image" src="../assets/images/school-education/89930.jpg" width="100%" height="100%">
+            <div
+                class="position-absolute w-100 h-100 left-0 top-0 d-flex flex-column align-items-center p-5 shadowed-text">
+                <span class="fs-3 fw-medium text-light py-5">SCHOOL EDUCATION</span>
+                <span class="text-light fs-4 pb-5">Erasmus+ supports training activities abroad for professionals
+                    involved in pre-primary, primary and secondary school education. These opportunities can consist of
+                    courses and trainings, and job shadowing periods at relevant organisations.</span>
+                <div class="position-absolute bottom-0 mb-4">
+                    <button class="btn py-2 px-1 mt-2 text-light fw-bold fs-6 custom-btn-primary">Look Courses</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 position-relative">
+            <img class="education-image" src="../assets/images/vocational-education\2149557613.jpg" width="100%"
+                height="100%">
+            <div
+                class="position-absolute w-100 h-100 left-0 top-0 d-flex flex-column align-items-center p-5 shadowed-text">
+                <span class="fs-3 fw-medium text-light py-5">VOCATIONAL EDUCATION</span>
+                <span class="text-light fs-4 pb-5">Erasmus+ supports the professional development of people working in
+                    vocational education and training (VET) through training periods abroad. Erasmus+ also offers the
+                    chance to combine studying abroad with a traineeship.</span>
+                <div class="position-absolute bottom-0 mb-4">
+                    <button class="btn py-2 px-1 mt-2 text-light fw-bold fs-6 custom-btn-primary">Look Courses</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 position-relative">
+            <img class="education-image"
+                src="..\assets\images\adult-education\medium-shot-senior-woman-education-concept.jpg" width="100%"
+                height="100%">
+            <div
+                class="position-absolute w-100 h-100 left-0 top-0 d-flex flex-column align-items-center p-5 shadowed-text">
+                <span class="fs-3 fw-medium text-light py-5">ADULT EDUCATION</span>
+                <span class="text-light fs-4 pb-5">Erasmus+ supports training assignments at adult education
+                    organisations abroad. These opportunities can consist of courses and training, and job shadowing
+                    periods at relevant organisations.</span>
+                <div class="position-absolute bottom-0 mb-4">
+                    <button class="btn py-2 px-1 mt-2 text-light fw-bold fs-6 custom-btn-primary">Look Courses</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 position-relative">
+            <img class="education-image"
+                src="..\assets\images\job-shadowing\silhouettes-businesspeople-talking-about-meeting.jpg" width="100%"
+                height="100%">
+            <div
+                class="position-absolute w-100 h-100 left-0 top-0 d-flex flex-column align-items-center p-5 shadowed-text">
+                <span class="fs-3 fw-medium text-light py-5">JOB SHADOWING</span>
+                <span class="text-light fs-4 pb-5">Job shadowing is a useful way to learn about a particular job of
+                    interest. Each job-shadowing experience can be different. However, you typically will follow an
+                    employee and observe them partaking in their day-to-day work. They might ask you to help with
+                    certain tasks, as well.</span>
+                <div class="position-absolute bottom-0 mb-4">
+                    <button class="btn py-2 px-1 mt-2 text-light fw-bold fs-6 custom-btn-primary">Look Courses</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- courses end -->
