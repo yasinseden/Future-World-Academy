@@ -2,11 +2,21 @@
     <div class="w-75 d-flex align-items-center justify-content-between">
         <img src="../assets/images/fwa-logo.png" height="50%" style="cursor: pointer;" (click)="navigateTo('/')">
         <div class="text-light fs-4 d-flex justify-content-start">
-            <span class="nav-bar-links me-4 fw-bold" (click)="navigateTo('/')">Home</span>
-            <span class="nav-bar-links mx-4 fw-bold" (click)="navigateTo('/about')">About Us</span>
-            <span class="nav-bar-links mx-4 fw-bold" (click)="navigateTo('/')">Courses</span>
-            <span class="nav-bar-links mx-4 fw-bold" (click)="navigateTo('/education-centers')">Education Centers</span>
-            <span class="nav-bar-links ms-4 fw-bold" (click)="navigateTo('/contact-us')">Contact Us</span>
+            <div class="nav-bar-links me-4 fw-bold" (click)="navigateTo('/')">Home</div>
+            <div class="nav-bar-links mx-4 fw-bold" (click)="navigateTo('/about')">About Us</div>
+            <div class="nav-bar-links mx-4 fw-bold dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span>Courses</span>
+                <div class="dropdown-menu">
+                    <div class="d-flex flex-column align-items-center px-2">
+                        <span class="p-2 fs-5 nav-bar-links" (click)="navigateTo('/school-education')">School Education</span>
+                        <span class="p-2 fs-5 nav-bar-links" (click)="navigateTo('/vocational-education')">Vocational Education</span>
+                        <span class="p-2 fs-5 nav-bar-links" (click)="navigateTo('/adult-education')">Adult Education</span>
+                        <span class="p-2 fs-5 nav-bar-links" (click)="navigateTo('/job-shadowing')">Job Shadowing</span>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-bar-links mx-4 fw-bold" (click)="navigateTo('/education-centers')">Education Centers</div>
+            <div class="nav-bar-links ms-4 fw-bold" (click)="navigateTo('/contact-us')">Contact Us</div>
         </div>
     </div>
 </div>

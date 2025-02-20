@@ -19,7 +19,7 @@
             </span>
         </div>
         <div class="py-3">
-            <button class="btn p-3 text-light fw-bold custom-btn-primary">Explore
+            <button class="btn p-3 text-light fw-bold custom-btn-primary" (click)="scrollToCourses()">Explore
                 Courses</button>
         </div>
     </div>
@@ -40,7 +40,7 @@
             </span>
         </div>
         <button class="btn py-3 px-1 mt-2 text-light fw-bold fs-5 w-25 custom-btn-primary"
-            (click)="routeToAboutUs()">More Information</button>
+            (click)="routeToPage('/about')">More Information</button>
     </div>
     <div class="w-50 d-flex justify-content-end">
         <img src="../assets/images/home-page-about-us.jpg" width="85%" class="custom-radius">
@@ -48,7 +48,7 @@
 </div>
 <!-- about us end -->
 <!-- courses begin -->
-<div class="container my-5 py-5 align-items-center">
+<div #coursesField class="container my-5 py-5 align-items-center">
     <div class="custom-box mb-5 py-2 w-50 d-flex flex-column">
         <span class="fw-bolder fs-1">Our Courses</span>
         <span class="fs-3">Choose from our wide variety of courses in four different categories</span>
@@ -63,7 +63,7 @@
                     involved in pre-primary, primary and secondary school education. These opportunities can consist of
                     courses and trainings, and job shadowing periods at relevant organisations.</span>
                 <div class="position-absolute bottom-0 mb-4">
-                    <button class="btn py-2 px-1 mt-2 text-light fw-bold fs-6 custom-btn-primary">Look Courses</button>
+                    <button class="btn py-2 px-1 mt-2 text-light fw-bold fs-6 custom-btn-primary" (click)="routeToPage('/school-education')">Look Courses</button>
                 </div>
             </div>
         </div>
@@ -77,7 +77,7 @@
                     vocational education and training (VET) through training periods abroad. Erasmus+ also offers the
                     chance to combine studying abroad with a traineeship.</span>
                 <div class="position-absolute bottom-0 mb-4">
-                    <button class="btn py-2 px-1 mt-2 text-light fw-bold fs-6 custom-btn-primary">Look Courses</button>
+                    <button class="btn py-2 px-1 mt-2 text-light fw-bold fs-6 custom-btn-primary" (click)="routeToPage('/vocational-education')">Look Courses</button>
                 </div>
             </div>
         </div>
@@ -92,7 +92,7 @@
                     organisations abroad. These opportunities can consist of courses and training, and job shadowing
                     periods at relevant organisations.</span>
                 <div class="position-absolute bottom-0 mb-4">
-                    <button class="btn py-2 px-1 mt-2 text-light fw-bold fs-6 custom-btn-primary">Look Courses</button>
+                    <button class="btn py-2 px-1 mt-2 text-light fw-bold fs-6 custom-btn-primary" (click)="routeToPage('/adult-education')">Look Courses</button>
                 </div>
             </div>
         </div>
@@ -108,7 +108,7 @@
                     employee and observe them partaking in their day-to-day work. They might ask you to help with
                     certain tasks, as well.</span>
                 <div class="position-absolute bottom-0 mb-4">
-                    <button class="btn py-2 px-1 mt-2 text-light fw-bold fs-6 custom-btn-primary">Look Courses</button>
+                    <button class="btn py-2 px-1 mt-2 text-light fw-bold fs-6 custom-btn-primary" (click)="routeToPage('/job-shadowing')">Look Courses</button>
                 </div>
             </div>
         </div>

@@ -10,19 +10,24 @@ import { Router } from '@angular/router';
 })
 export class HomePageComponent implements AfterViewInit {
 
-  constructor(private router: Router) {} 
+  constructor(private router: Router) { }
 
   @ViewChild('videoEl', { static: false }) videoElementRef!: ElementRef<HTMLVideoElement>;
+  @ViewChild('coursesField') coursesField!: ElementRef;
 
   ngAfterViewInit() {
     if (this.videoElementRef) {
-     const videoEl = this.videoElementRef.nativeElement;
-     videoEl.muted = true;
-     videoEl.play().catch(error => console.error('Autoplay failed: ', error))
+      const videoEl = this.videoElementRef.nativeElement;
+      videoEl.muted = true;
+      videoEl.play().catch(error => console.error('Autoplay failed: ', error))
     }
   }
 
-  routeToAboutUs() {
-    this.router.navigate(['/about'])
+  routeToPage(param: string) {
+    this.router.navigate([param])
+  }
+
+  scrollToCourses() {
+    this.coursesField.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }

@@ -1,0 +1,12 @@
+.selected-option {
+    border-bottom: 5px solid var(--primary-color-900)
+}
+
+.custom-navbar-options {
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+        background-color: var(--primary-color-500);
+    }
+}
