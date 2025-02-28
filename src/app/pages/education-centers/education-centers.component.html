@@ -1,1 +1,110 @@
-<p>education-centers works!</p>
+<div class="w-100">
+  <!-- title and top image begin -->
+  <div class="position-relative d-flex flex-column align-items-center" style="height: 50vh;">
+    <div class="w-100 d-flex align-items-center justify-content-center low-brightness"
+      style="height: 50vh; background-image: url(../assets/images/education-centers/world-map.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+    </div>
+    <span class="fw-bolder position-absolute translate-middle high-brightness"
+      style="font-size: 100px; color: var(--primary-color-500); top: 50%; left: 50%; width: max-content;">EDUCATION
+      CENTERS</span>
+    <!-- 3 equal field begin -->
+    <div class="w-75 position-absolute py-1"
+      style="bottom: -9vh; border-radius: 1.5rem; background-color: var(--success-color-700);">
+      <div class="row">
+        <div class="col-4 text-light d-flex flex-column justify-content-center align-items-center fs-1">
+          <span class="fw-bold" style="font-size: 6rem;">7</span>
+          <span class="fs-1 fw-bold">COUNTRIES</span>
+        </div>
+        <div class="col-4 text-light d-flex flex-column justify-content-center align-items-center fs-1"
+          style="border-left: 0.25rem solid white; border-right: 0.25rem solid white;">
+          <span class="fw-bold" style="font-size: 6rem;">8</span>
+          <span class="fs-1 fw-bold">CITIES</span>
+        </div>
+        <div class="col-4 text-light d-flex flex-column justify-content-center align-items-center fs-1">
+          <span class="fw-bold" style="font-size: 6rem;">54</span>
+          <span class="fs-1 fw-bold">COURSES</span>
+        </div>
+      </div>
+    </div>
+    <!-- 3 equal field end -->
+  </div>
+  <!-- title and top image end -->
+  <div class="pt-5 my-5 d-flex flex-column align-items-center">
+    @for (city of cities; track $index) {
+    @if ($index % 2 === 0) {
+    <!-- Map located right begin -->
+    <div class="w-100 d-flex justify-content-center  py-5 my-5" style="background-color: var(--primary-color-900);">
+      <div class="w-75 d-flex justify-content-between text-light">
+        <div class="w-50 d-flex flex-column justify-content-center">
+          <span class="fw-bold pb-5" style="font-size: 7.5rem; font-style:oblique;">{{city.name}}</span>
+          <div class="custom-box w-75 d-flex flex-column">
+            <span class="fs-4 py-1" style="font-style: italic;">{{city.text}}</span>
+          </div>
+        </div>
+        <div class="w-50 pe-5">
+          <img [src]="city.img" width="100%">
+          <button id="toggleButton" class="mt-5" (click)="toggleTravelGuideModel()">Toggle Element</button>
+        </div>
+      </div>
+    </div>
+    <!-- Map located right end -->
+    } @else {
+    <!-- Map located left begin -->
+    <div class="w-100 d-flex justify-content-center  py-5 my-5" style="background-color: var(--primary-color-900);">
+      <div class="w-75 d-flex justify-content-between text-light">
+        <div class="w-50 pe-5">
+          <img [src]="city.img" width="100%">
+        </div>
+        <div class="w-50 d-flex flex-column justify-content-center align-items-end">
+          <div class="w-75">
+            <span class="fw-bold pb-5 d-inline-block"
+              style="font-size: 7.5rem; font-style:oblique;">{{city.name}}</span>
+          </div>
+          <div class="w-100 d-flex flex-column align-items-end">
+            <div class="w-75 custom-box">
+              <span class="fs-4 py-1" style="font-style: italic;">{{city.text}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Map located left end -->
+    }
+    }
+  </div>
+</div>
+
+<div id="hiddenElement"  class="w-100 d-flex justify-content-center align-items-center bg-dark visible">
+  <div class="hidden position-fixed top-50 start-50 translate-middle w-100 d-flex justify-content-center align-items-center" style="height: 100vh; background-color: rgba(156, 156, 156, 0.75);">
+    <div class="w-75 h-75" style="border-radius: 2rem; background-color: rgba(0, 0, 0, 0.5);">
+      <!-- header begin -->
+       <div class="d-flex justify-content-between px-3 py-2">
+        <div class="fw-bold text-light p-3" style="font-size: 3.5rem;">ANTALYA</div>
+         <i class="bi bi-x-circle fs-1 text-light" style="cursor: pointer;" (click)="toggleTravelGuideModel()"></i>
+       </div>
+      <!-- header end -->
+      <!-- body begin -->
+       <div class="px-5 h-75">
+        <div class="row h-100 bg-primary">
+          <div class="col-6 d-flex align-items-center">
+            <img src="../../../assets/images/riga.jpg" width="100%" alt="">
+          </div>
+          <div class="col-6 d-flex flex-column justify-content-between">
+            <span class="fs-4 text-light">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates quas omnis ipsum tempore accusamus laboriosam, veritatis asperiores voluptate blanditiis explicabo assumenda, harum totam consequuntur quod possimus. In ratione itaque assumenda?
+              Enim facilis ullam distinctio rerum error voluptatum laborum. Architecto dolorum minima optio, nulla quo sunt qui laborum officia fuga aliquid molestias repellendus, obcaecati saepe adipisci cupiditate! Sint neque unde ab.
+              Ut, quo, nobis sed necessitatibus sit a iusto voluptates quod magni, magnam blanditiis itaque laborum ratione veritatis! Quam, id, vero veritatis eaque praesentium nostrum, nam inventore eum non atque dolores.
+            </span>
+            <div class="row">
+              <img src="../../../assets/images/riga.jpg" class="col-4" width="100%" alt="">
+              <img src="../../../assets/images/riga.jpg" class="col-4" width="100%" alt="">
+              <img src="../../../assets/images/riga.jpg" class="col-4" width="100%" alt="">
+              <div class="text-center text-light fs-3">-- -- --</div>
+            </div>
+          </div>
+        </div>
+       </div>
+      <!-- body end -->
+    </div>
+  </div>
+</div>

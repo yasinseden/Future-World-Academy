@@ -4,6 +4,7 @@ export class EducationModel {
     preInfo: string = '';
     cost: string = '';
     language: string = '';
+    enrolmentUrl: string = '';
     duration: Duration = {
         period: '',
         amount: 0
