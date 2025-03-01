@@ -1,10 +1,41 @@
-#hiddenElement {
+.hiddenElement {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-#hiddenElement.visible {
+.hiddenElement.visible {
     opacity: 1;
     visibility: visible;
+}
+
+.custom-bg {
+    background-image: url('../../../assets/images/img-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+::ng-deep.carousel-indicators {
+    display: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0.25rem;
+    background-color: black;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+::ng-deep.carousel-control-prev {
+    left: -5rem;
+    width: 10%;
+}
+
+::ng-deep.carousel-control-next {
+    right: -5rem;
+    width: 10%;
+}
+
+::ng-deep.carousel.slide {
+    width: 80%;
 }

@@ -1,0 +1,52 @@
+
+<div id="hiddenElement" class="w-100 d-flex justify-content-center align-items-center">
+    <div
+      class="hidden position-fixed top-50 start-50 translate-middle w-100 d-flex justify-content-center align-items-center"
+      style="height: 100vh; background-color: rgba(156, 156, 156, 0.75); background-image: url({{cities[0].img}});
+      background-repeat: no-repeat;
+      background-size: cover;">
+      <div class="w-75 h-75" style="border-radius: 2rem; background-color: rgba(0, 0, 0, 0.75);">
+        <!-- header begin -->
+        <div class="d-flex justify-content-between px-3 py-2">
+          <div class="fw-bold text-light p-3" style="font-size: 3.5rem;">ANTALYA</div>
+          <i class="bi bi-x-circle fs-1 text-light" style="cursor: pointer;" (click)="toggleTravelGuideModal()"></i>
+        </div>
+        <!-- header end -->
+        <!-- body begin -->
+        <div class="px-5 h-75">
+          <div class="row h-100">
+            <div class="col-6 d-flex align-items-center">
+              <img [src]="currentSlide.img" width="100%" alt="">
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-between">
+              <span class="fs-4 text-light">
+                {{currentSlide.text}}
+              </span>
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <carousel class="d-flex justify-content-center align-items-center" [itemsPerSlide]="itemsPerSlide"
+                  [singleSlideOffset]="false" [interval]="0" [indicatorsByChunk]="true">
+                  @for(slide of cities[0].slides; track $index) {
+                  <slide class="rounded-4 overflow-hidden mx-2 border-5" style="height: 8rem; cursor: pointer;"
+                    [ngClass]="{'border': $index === activeSlide}" (click)="openSlideDetails($index)">
+                    <img [src]="slide.img" alt="image slide" style="display: block; width: 100%;">
+                    <div class="carousel-caption">
+                    </div>
+                  </slide>
+                  }
+                </carousel>
+  
+                <!-- <div class="mt-3 rounded-pill bg-light">
+                  <i class="bi bi-circle-fill mx-2"></i>
+                  <i class="bi bi-circle mx-2"></i>
+                  <i class="bi bi-circle mx-2"></i>
+                  <i class="bi bi-circle mx-2"></i>
+                </div> -->
+  
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- body end -->
+      </div>
+    </div>
+  </div>
