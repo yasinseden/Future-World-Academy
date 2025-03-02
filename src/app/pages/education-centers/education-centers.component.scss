@@ -36,6 +36,43 @@
     width: 10%;
 }
 
+::ng-deep.icon-prev {
+    padding: 0.25rem;
+    background-color: rgba(0, 0, 0, 1) !important;
+}
+
+::ng-deep.icon-next {
+    padding: 0.25rem;
+    background-color: rgba(0, 0, 0, 1) !important;
+}
+
 ::ng-deep.carousel.slide {
     width: 80%;
+
+    & slide .item {
+        height: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.custom-overflow-scroll {
+    overflow-y: scroll;
+}
+
+.hover-me {
+    display: none;
+    z-index: 999;
+}
+
+.custom-location-icon {
+    color: var(--danger-color-500);
+    cursor: pointer;
+    
+    &:hover + .hover-me {
+        display: block;
+        color: var(--secondary-color-300);
+    }
 }

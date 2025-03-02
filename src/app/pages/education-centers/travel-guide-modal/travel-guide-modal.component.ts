@@ -10,7 +10,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     CommonModule,
   ],
   templateUrl: './travel-guide-modal.component.html',
-  styleUrl: './travel-guide-modal.component.css'
+  styleUrl: './travel-guide-modal.component.scss'
 })
 export class TravelGuideModalComponent {
 

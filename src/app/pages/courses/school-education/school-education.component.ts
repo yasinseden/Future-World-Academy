@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [SchoolEducationDetailComponent],
   templateUrl: './school-education.component.html',
-  styleUrl: './school-education.component.css'
+  styleUrl: './school-education.component.scss'
 })
 export class SchoolEducationComponent {
 

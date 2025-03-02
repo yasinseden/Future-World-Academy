@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './job-shadowing.component.html',
-  styleUrl: './job-shadowing.component.css'
+  styleUrl: './job-shadowing.component.scss'
 })
 export class JobShadowingComponent {
 

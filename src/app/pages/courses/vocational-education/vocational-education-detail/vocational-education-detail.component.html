@@ -3,17 +3,17 @@
      <div class="card position-absolute p-4 bg-light" style="top: 15rem; right: 10%; z-index: 999; width: 20%;">
         <img [src]="educationData.img">
         <div class="d-flex flex-column mb-4">
-            <span class="pt-3 fs-4 text-secondary fw-bold">Course Price</span>
-            <span class="fs-1 fw-bold" style="color: var(--success-color-500);">{{educationData.cost}}</span>
+            <span class="pt-3 fs-5 text-secondary fw-bold">Course Price</span>
+            <span class="fs-2 fw-bold" style="color: var(--success-color-500);">{{educationData.cost}}</span>
         </div>
         <div class="d-flex flex-column">
-            <span class="fs-3 text-secondary">
+            <span class="fs-4 text-secondary">
                 <span class="fw-bold">Duration:</span>
                  {{educationData.duration.amount}} {{educationData.duration.period}}</span>
-            <span class="fs-3 text-secondary">
+            <span class="fs-4 text-secondary">
                 <span class="fw-bold">Language:</span>
                 {{educationData.language}}</span>
-            <span class="fs-3 text-secondary">
+            <span class="fs-4 text-secondary">
                 <span class="fw-bold">Cities:</span>
                 @for (city of educationData.cities; track $index) {
                     @if ($index != educationData.cities.length - 1) {
@@ -25,14 +25,14 @@
                 }
             </span>
             @if (educationData.isCertificated) {
-                <span class="fs-3 text-secondary">Cerficated</span>
+                <span class="fs-4 text-secondary">Cerficated</span>
             }
             @if (!educationData.isCertificated) {
-                <span class="fs-3 text-secondary">Not Cerficated</span>
+                <span class="fs-4 text-secondary">Not Cerficated</span>
             }
         </div>
         <div class="pt-4">
-            <a [href]="educationData.enrolmentUrl" target="_blank" class="btn custom-btn-primary w-100 fs-3 fw-bold text-light">Enroll Now</a>
+            <a [href]="educationData.enrolmentUrl" target="_blank" class="btn custom-btn-primary w-100 fs-4 fw-bold text-light">Enroll Now</a>
         </div>
      </div>
     <!-- enrollment card end -->
@@ -43,7 +43,7 @@
             <h1 class="text-light fs-1 w-75 py-2 fw-bold" style="font-style: italic;">
                 {{educationData.name}}
             </h1>
-            <p class="text-light fs-3 px-1 pt-3">
+            <p class="text-light fs-4 px-1 pt-3">
                 {{educationData.preInfo}}
             </p>
         </div>

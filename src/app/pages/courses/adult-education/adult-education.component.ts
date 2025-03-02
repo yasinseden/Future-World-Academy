@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './adult-education.component.html',
-  styleUrl: './adult-education.component.css'
+  styleUrl: './adult-education.component.scss'
 })
 export class AdultEducationComponent {
 

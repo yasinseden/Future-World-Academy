@@ -11,7 +11,7 @@ import { Subject, Subscribable, takeUntil } from 'rxjs';
     CommonModule
   ],
   templateUrl: './school-education-detail.component.html',
-  styleUrl: './school-education-detail.component.css'
+  styleUrl: './school-education-detail.component.scss'
 })
 export class SchoolEducationDetailComponent {
 

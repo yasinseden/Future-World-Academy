@@ -1,6 +1,18 @@
-<div class="w-100">
+<div class="w-100 custom-font-size">
   <!-- title and top image begin -->
-  <div class="position-relative d-flex flex-column align-items-center" style="height: 50vh;">
+   <div class="d-flex justify-content-center align-items-center py-5 w-100" style="background-color: var(--primary-color-900);">
+     <div class="d-flex justify-content-center align-items-center pt-4 mt-5 position-relative" style="width: 1000px; height: 500px;">
+       <img src="../assets/images/education-centers/europe-3.jpg" height="100%" width="75%" alt="">
+       @for (city of cities; track $index) {
+         <i id="helsinki" class="bi bi-geo-alt-fill position-absolute fs-3 custom-location-icon" [ngStyle]="{'bottom': city.position.bottom + '%', 'left': city.position.left + '%'}"></i>
+         <div class="bg-light p-5 position-absolute hover-me" [ngStyle]="{'left': (city.position.left + 2) + '%', 'color': city.position.bottom > 50 ? 'red' : 'yellow'}">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, suscipit.
+         </div>
+       }
+     </div>
+   </div>
+   <!-- ***************************** D-none ********************************* -->
+  <div class="position-relative d-flex flex-column align-items-center d-none" style="height: 50vh;">
     <div class="w-100 d-flex align-items-center justify-content-center low-brightness"
       style="height: 50vh; background-image: url(../assets/images/education-centers/world-map.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
     </div>
@@ -28,6 +40,7 @@
     </div>
     <!-- 3 equal field end -->
   </div>
+  <!-- ***************************** D-none ********************************* -->
   <!-- title and top image end -->
   <div class="pt-5 my-5 d-flex flex-column align-items-center">
     @for (city of cities; track $index) {
@@ -40,8 +53,10 @@
           <div class="custom-box w-75 d-flex flex-column">
             <span class="fs-4 py-1" style="font-style: italic;">{{city.text}}</span>
           </div>
-          <button id="toggleButton" class="btn custom-btn-secondary mt-5 w-25 py-2 text-light fs-4 fw-bold"
-            (click)="toggleTravelGuideModel($index)">Learn More</button>
+          <div class="w-75">
+            <button id="toggleButton" class="btn custom-btn-secondary mt-5 w-25 py-2 text-light fs-5 fw-bold"
+              (click)="toggleTravelGuideModel($index)">Learn More</button>
+          </div>
         </div>
         <div class="w-50 pe-5">
           <img [src]="city.img" width="100%">
@@ -67,7 +82,7 @@
             </div>
           </div>
           <div class="w-75">
-            <button id="toggleButton" class="btn custom-btn-secondary mt-5 w-25 py-2 text-light fs-4 fw-bold"
+            <button id="toggleButton" class="btn custom-btn-secondary mt-5 w-25 py-2 text-light fs-5 fw-bold"
               (click)="toggleTravelGuideModel($index)">Learn More</button>
           </div>
         </div>
@@ -81,7 +96,8 @@
 
 <!-- travel guide modal begin -->
 @for (cityData of cities; track $index) {
-<div [id]="'hiddenElementId' + $index" class="hiddenElement w-100 d-flex justify-content-center align-items-center">
+<div [id]="'hiddenElementId' + $index"
+  class="hiddenElement w-100 d-flex justify-content-center align-items-center custom-font-size">
   <div
     class="hidden position-fixed top-50 start-50 translate-middle w-100 d-flex justify-content-center align-items-center"
     style="height: 100vh; background-color: rgba(156, 156, 156, 0.75); background-image: url('../../../assets/images/img-2.jpeg');
@@ -90,8 +106,8 @@
     <div class="w-75 h-75" style="border-radius: 2rem; background-color: rgba(0, 0, 0, 0.55);">
       <!-- header begin -->
       <div class="d-flex justify-content-between px-3 py-2">
-        <div class="fw-bold text-light p-3" style="font-size: 3.5rem;">{{cities[$index].name}}</div>
-        <i class="bi bi-x-circle fs-1 text-light" style="cursor: pointer;"
+        <div class="fw-bold text-light px-3" style="font-size: 3rem;">{{cities[$index].name}}</div>
+        <i class="bi bi-x-circle fs-2 text-light" style="cursor: pointer;"
           (click)="toggleTravelGuideModel(activeCityIndex)"></i>
       </div>
       <!-- header end -->
@@ -101,16 +117,18 @@
           <div class="col-6 d-flex align-items-center">
             <img [src]="currentSlide ? currentSlide.img : cityData.slides[0].img" width="100%" alt="">
           </div>
-          <div class="col-6 d-flex flex-column justify-content-between">
-            <span class="fs-4 text-light">
-              {{currentSlide ? currentSlide.text : cityData.slides[0].text}}
-            </span>
-            <div class="d-flex flex-column justify-content-center align-items-center">
+          <div class="col-6 d-flex flex-column justify-content-between h-100">
+            <div class="h-75 overflow-auto mb-3" style="min-height: 75%;">
+              <span class="fs-5 text-light">
+                {{currentSlide ? currentSlide.text : cityData.slides[0].text}}
+              </span>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center h-25" style="min-height: 25%;">
               <carousel class="d-flex justify-content-center align-items-center" [itemsPerSlide]="itemsPerSlide"
                 [singleSlideOffset]="false" [interval]="0" [indicatorsByChunk]="true">
                 @for(slide of cities[$index].slides; track $index) {
-                <slide class="rounded-4 overflow-hidden mx-2 border-5" style="height: 8rem; cursor: pointer;"
-                  [ngClass]="{'border': $index === activeSlide}" (click)="openSlideDetails($index)">
+                <slide class="rounded-4 overflow-hidden mx-2 border border-2" style="cursor: pointer; min-height: 90%;"
+                  [ngClass]="{'border-5': $index === activeSlide}" (click)="openSlideDetails($index)">
                   <img [src]="slide.img" alt="image slide" style="display: block; width: 100%;">
                   <div class="carousel-caption">
                   </div>

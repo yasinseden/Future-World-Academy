@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ],
   templateUrl: './vocational-education-detail.component.html',
-  styleUrl: './vocational-education-detail.component.css'
+  styleUrl: './vocational-education-detail.component.scss'
 })
 export class VocationalEducationDetailComponent {
 

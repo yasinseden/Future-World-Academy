@@ -8,7 +8,7 @@ import { EducationsService } from '../../../shared/services/educations/education
   standalone: true,
   imports: [],
   templateUrl: './vocational-education.component.html',
-  styleUrl: './vocational-education.component.css'
+  styleUrl: './vocational-education.component.scss'
 })
 export class VocationalEducationComponent {
 
