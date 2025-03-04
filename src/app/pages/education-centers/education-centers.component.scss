@@ -71,8 +71,16 @@
     color: var(--danger-color-500);
     cursor: pointer;
     
-    &:hover + .hover-me {
-        display: block;
+    &:hover {
         color: var(--secondary-color-300);
+        z-index: 999 !important;
+
+        & + .hover-me {
+            display: flex;
+        }
     }
+}
+
+.hover-me:hover {
+    display: flex;
 }

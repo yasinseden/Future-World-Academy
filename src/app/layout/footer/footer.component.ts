@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActiveTabService } from '../../shared/services/active-tab.service';
 
 @Component({
   selector: 'app-footer',
@@ -10,10 +11,15 @@ import { Router } from '@angular/router';
 })
 export class FooterComponent {
 
-    constructor(private router: Router) {}
-  
-    navigateTo(path: string) {
-      this.router.navigate([path]);
-    }
+  activeTab: number = 1;
+
+  constructor(private router: Router, private activeTabService: ActiveTabService) {
+    activeTabService.activeTabObservable$.subscribe(tab => this.activeTab = tab)
+  }
+
+  navigateTo(path: string, active: number) {
+    this.router.navigate([path]);
+    this.activeTabService.activeTabBehaviorSubject.next(active)
+  }
 
 }

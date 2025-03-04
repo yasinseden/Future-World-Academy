@@ -1,46 +1,40 @@
-<div class="w-100 custom-font-size">
+<div class="w-100 custom-font-size" style="background-image: url(../assets/);">
   <!-- title and top image begin -->
-   <div class="d-flex justify-content-center align-items-center py-5 w-100" style="background-color: var(--primary-color-900);">
-     <div class="d-flex justify-content-center align-items-center pt-4 mt-5 position-relative" style="width: 1000px; height: 500px;">
-       <img src="../assets/images/education-centers/europe-3.jpg" height="100%" width="75%" alt="">
-       @for (city of cities; track $index) {
-         <i id="helsinki" class="bi bi-geo-alt-fill position-absolute fs-3 custom-location-icon" [ngStyle]="{'bottom': city.position.bottom + '%', 'left': city.position.left + '%'}"></i>
-         <div class="bg-light p-5 position-absolute hover-me" [ngStyle]="{'left': (city.position.left + 2) + '%', 'color': city.position.bottom > 50 ? 'red' : 'yellow'}">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, suscipit.
-         </div>
-       }
-     </div>
-   </div>
-   <!-- ***************************** D-none ********************************* -->
-  <div class="position-relative d-flex flex-column align-items-center d-none" style="height: 50vh;">
-    <div class="w-100 d-flex align-items-center justify-content-center low-brightness"
-      style="height: 50vh; background-image: url(../assets/images/education-centers/world-map.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+  <div class="d-flex flex-column align-items-center justify-content-center align-items-center py-5 w-100"
+    style="background-color: var(--primary-color-300); height: 95vh;">
+    <div class="py-4 d-flex justify-content-center">
+      <span class="fw-bold text-white" style="font-size: 4rem;">EDUCATION CENTERS</span>
     </div>
-    <span class="fw-bolder position-absolute translate-middle high-brightness"
-      style="font-size: 100px; color: var(--primary-color-500); top: 50%; left: 50%; width: max-content;">EDUCATION
-      CENTERS</span>
-    <!-- 3 equal field begin -->
-    <div class="w-75 position-absolute py-1"
-      style="bottom: -9vh; border-radius: 1.5rem; background-color: var(--success-color-700);">
-      <div class="row">
-        <div class="col-4 text-light d-flex flex-column justify-content-center align-items-center fs-1">
-          <span class="fw-bold" style="font-size: 6rem;">7</span>
-          <span class="fs-1 fw-bold">COUNTRIES</span>
-        </div>
-        <div class="col-4 text-light d-flex flex-column justify-content-center align-items-center fs-1"
-          style="border-left: 0.25rem solid white; border-right: 0.25rem solid white;">
-          <span class="fw-bold" style="font-size: 6rem;">8</span>
-          <span class="fs-1 fw-bold">CITIES</span>
-        </div>
-        <div class="col-4 text-light d-flex flex-column justify-content-center align-items-center fs-1">
-          <span class="fw-bold" style="font-size: 6rem;">54</span>
-          <span class="fs-1 fw-bold">COURSES</span>
+    <div class="d-flex justify-content-center pt-4 align-items-center position-relative"
+      style="width: 1200px; height: 500px;">
+      <img src="../assets/images/education-centers/europe-6.png" height="100%" width="75%" alt="">
+      @for (city of cities; track $index) {
+      <i class="bi bi-geo-alt-fill position-absolute fs-3 custom-location-icon"
+        [ngStyle]="{'bottom': city.position.bottom + '%', 'left': city.position.left + '%'}"></i>
+      <div [id]="'card-' + $index" class="position-absolute hover-me p-3 rounded-4 text-light flex-column shadow-lg"
+        style="background: var(--primary-color-500); width: 50vw;"
+        [ngStyle]="{'left': (city.position.left + 1) + '%', 'bottom': (city.position.bottom + 4) + '%', 'transform': 'translateX(-50%)'}">
+        <!-- 'color': city.position.bottom > 50 ? 'red' : 'yellow' -->
+        <span class="w-100 d-inline-block text-center fs-2 fw-bold">{{city.name}}</span>
+        <div class="d-flex">
+          <div class="w-50">
+            <img [src]="city.img" style="width: 100%;">
+          </div>
+          <div class="w-50 p-5 d-flex flex-column justify-content-center align-items-center">
+            <div class="custom-box">
+              <span>
+                {{city.text}}
+              </span>
+            </div>
+            <div class="d-flex justify-content-end w-100 pe-3">
+              <button class="btn custom-btn-secondary mt-4 text-light fw-bold" (click)="toggleTravelGuideModel($index)">Open Travel Guide</button>
+            </div>
+          </div>
         </div>
       </div>
+      }
     </div>
-    <!-- 3 equal field end -->
   </div>
-  <!-- ***************************** D-none ********************************* -->
   <!-- title and top image end -->
   <div class="pt-5 my-5 d-flex flex-column align-items-center">
     @for (city of cities; track $index) {
@@ -99,7 +93,7 @@
 <div [id]="'hiddenElementId' + $index"
   class="hiddenElement w-100 d-flex justify-content-center align-items-center custom-font-size">
   <div
-    class="hidden position-fixed top-50 start-50 translate-middle w-100 d-flex justify-content-center align-items-center"
+    class="hidden position-fixed top-50 start-50 translate-middle w-100 d-flex justify-content-center align-items-center z-3"
     style="height: 100vh; background-color: rgba(156, 156, 156, 0.75); background-image: url('../../../assets/images/img-2.jpeg');
          background-repeat: no-repeat;
          background-size: cover;">

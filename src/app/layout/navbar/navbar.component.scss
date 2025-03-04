@@ -2,6 +2,25 @@
     cursor: pointer;
 
     &:hover {
-        color: var(--primary-color-500);
+        color: var(--primary-color-300);
     }
+}
+
+#courses-hamburger {
+    background-color: white;
+    overflow: hidden;
+    transition: height 0.5s ease-out;
+}
+
+.h-0 {
+    height: 0;
+}
+
+#mobileNavLinks {
+    transform: translateY(-100%);
+}
+
+#mobileNavLinksChild {
+    transition: transform 0.5s ease-out;
+    transform: translateY(-100%);
 }

@@ -1,19 +1,14 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ActiveTabService {
 
-  activeTab: string = '/'
+  activeTabBehaviorSubject: BehaviorSubject<any> = new BehaviorSubject<number>(1);
+  activeTabObservable$: Observable<number> = this.activeTabBehaviorSubject.asObservable();
 
   constructor() {}
 
-  getActiveTab() {
-    return this.activeTab
-  }
-
-  setActiveTab(tab: string) {
-    this.activeTab = tab;
-  }
 }

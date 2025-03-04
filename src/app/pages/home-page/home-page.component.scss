@@ -1,3 +1,13 @@
+@media (max-width: 768px) {
+    .upper-field {}
+}
+
+@media (min-width: 768px) {
+    .upper-field {
+        height: 95vh;
+    }
+}
+
 .education-image {
     filter: brightness(0.5);
 }

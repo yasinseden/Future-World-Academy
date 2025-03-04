@@ -6,19 +6,25 @@
         <div class="col-4 row d-flex flex-column align-items-center">
             <div class="d-flex flex-column align-items-center col-12">
                 <div class="d-flex flex-column">
-                    <span class="fs-4 my-2 fw-medium router-links" (click)="navigateTo('/')">
+                    <span class="fs-4 mt-1 fw-medium router-links" (click)="navigateTo('/', 1)">
                         HOME
                     </span>
-                    <span class="fs-4 my-2 fw-medium router-links" (click)="navigateTo('/about')">
+                    <span class="fs-4 mt-1 fw-medium router-links" (click)="navigateTo('/about', 2)">
                         ABOUT US
                     </span>
-                    <span class="fs-4 my-2 fw-medium router-links" (click)="navigateTo('/')">
+                    <span class="fs-4 mt-1 fw-medium router-link-single">
                         COURSES
+                        <div class="d-flex flex-column ps-3" style="font-size: 1rem;">
+                            <span class="router-links" (click)="navigateTo('/school-education', 3)">school education</span>
+                            <span class="router-links" (click)="navigateTo('/vocational-education', 3)">vocational education</span>
+                            <span class="router-links" (click)="navigateTo('/adult-education', 3)">adult education</span>
+                            <span class="router-links" (click)="navigateTo('/job-shadowing', 3)">job shadowing</span>
+                        </div>
                     </span>
-                    <span class="fs-4 my-2 fw-medium router-links" (click)="navigateTo('/education-centers')">
+                    <span class="fs-4 mt-1 fw-medium router-links" (click)="navigateTo('/education-centers', 4)">
                         EDUCATION CENTERS
                     </span>
-                    <span class="fs-4 my-2 fw-medium router-links" (click)="navigateTo('/contact-us')">
+                    <span class="fs-4 mt-1 fw-medium router-links" (click)="navigateTo('/contact-us', 5)">
                         CONTACT US
                     </span>
                 </div>
