@@ -1,6 +1,6 @@
 <div class="w-100">
-    <!-- title and top image begin -->
-    <div class="position-relative" style="height: 50vh;">
+    <!-- title and top image desktop begin -->
+    <div class="position-relative d-none d-md-block" style="height: 50vh;">
         <div class="w-100 d-flex align-items-center justify-content-center low-brightness"
             style="height: 50vh; background-image: url(../assets/images/vocational-education/109584.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
         </div>
@@ -8,12 +8,19 @@
             style="font-size: 100px; color: var(--primary-color-500); top: 50%; left: 50%; width: max-content;">VOCATIONAL
             EDUCATION</span>
     </div>
-    <!-- title and top image end -->
+    <!-- title and top image desktop end -->
+    <!-- title and top image mobile begin -->
+    <div class="w-100 d-flex d-md-none align-items-center justify-content-center py-5"
+        style="background-image: url(../assets/images/vocational-education/109584.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <span class="fw-bolder py-5 text-center"
+            style="font-size: 5rem; color: var(--primary-color-500); text-shadow: 5px 5px 5px black;">VOCATIONAL EDUCATION</span>
+    </div>
+    <!-- title and top image mobile end -->
     <!-- cards begin -->
     <div class="container mt-5">
-        <div class="row">
+        <div class="grid">
             @for (ed of vocationalEducation; track $index) {
-            <div class="col-4">
+            <div class="md:col-4">
                 <div class="shadow overflow-hidden rounded m-5 d-flex flex-column" style="height: 45rem;">
                     <img [src]="ed.img" width="100%" height="50%">
                     <div class="px-2 d-flex flex-column h-100">

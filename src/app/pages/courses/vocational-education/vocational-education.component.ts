@@ -22,8 +22,9 @@ export class VocationalEducationComponent {
     }
   
     openDetails(edData: any, path: string = 'vocational-education-details') {
-      this.educationService.updateObservingSchoolEducationData(edData);
+      this.educationService.updateObservingVocationalEducationData(edData);
       this.router.navigate([path])
       this.detailedData = this.vocationalEducation[edData];
+      window.scrollTo({top: 0, behavior: 'instant'});
     }
 }

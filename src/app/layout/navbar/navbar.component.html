@@ -10,7 +10,7 @@
                 [ngStyle]="{'color': activeTab === 2 ? 'var(--primary-color-500)' : 'white'}">About Us</div>
             <div class="nav-bar-links mx-4 fw-bold dropdown-toggle" id="navbarDropdown" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                <span [ngStyle]="{'color': activeTab === 3 ? 'var(--primary-color-500)' : 'white'}">Courses</span>
+                <span class="nav-bar-links" [ngStyle]="{'color': activeTab === 3 ? 'var(--primary-color-500)' : 'white'}">Courses</span>
                 <div class="dropdown-menu">
                     <div class="d-flex flex-column align-items-center px-2">
                         <span class="p-2 fs-5 nav-bar-links" (click)="navigateTo('/school-education', 3)">School

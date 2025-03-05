@@ -1,4 +1,5 @@
-<div class="w-100 position-relative">
+<!-- desktop begin -->
+<div class="w-100 d-none d-md-block position-relative">
     <!-- enrollment card begin -->
      <div class="card position-absolute p-4 bg-light" style="top: 15rem; right: 10%; z-index: 999; width: 20%;">
         <img [src]="educationData.img">
@@ -52,7 +53,7 @@
     <!-- details field begin -->
     <div class="px-5" style="width: 60%;">
         <!-- navbar begin -->
-        <div class="mx-5 w-100 d-flex border-bottom border-3">
+        <div class="mx-5 w-100 d-flex border-bottom">
             <span class="px-3 py-4 fs-5 custom-navbar-options" (click)="changeSelectedOpt('description')"
                 [ngClass]="{'selected-option': selectedOption === 'description'}">Description</span>
             <span class="px-3 py-4 fs-5 custom-navbar-options" (click)="changeSelectedOpt('objectives')"
@@ -149,3 +150,166 @@
     </div>
     <!-- details field end -->
 </div>
+<!-- desktop end -->
+
+<!-- mobile begin -->
+<div class="w-100 position-relative d-md-none">
+    <!-- title and top image begin -->
+    <div class="position-relative px-5 pb-5" style="background-color: var(--primary-color-900); padding-top: 5rem;">
+        <div>
+            <h1 class="text-light fs-4 pb-2 pt-4 fw-bold" style="font-style: italic;">
+                {{educationData.name}}
+            </h1>
+            <p class="text-light px-1 pt-3">
+                {{educationData.preInfo}}
+            </p>
+        </div>
+    </div>
+    <!-- title and top image end -->
+    <!-- enrollment card begin -->
+    <div class="card m-3 p-2 bg-light">
+        <img [src]="educationData.img">
+        <div class="d-flex flex-column mb-4">
+            <span class="pt-3 fs-5 text-secondary fw-bold">Course Price</span>
+            <span class="fs-2 fw-bold" style="color: var(--success-color-500);">{{educationData.cost}}</span>
+        </div>
+        <div class="d-flex flex-column">
+            <span class="fs-4 text-secondary">
+                <span class="fw-bold">Duration:</span>
+                {{educationData.duration.amount}} {{educationData.duration.period}}</span>
+            <span class="fs-4 text-secondary">
+                <span class="fw-bold">Language:</span>
+                {{educationData.language}}</span>
+            <span class="fs-4 text-secondary">
+                <span class="fw-bold">Cities:</span>
+                @for (city of educationData.cities; track $index) {
+                @if ($index != educationData.cities.length - 1) {
+                {{city}},
+                }
+                @if ($index === educationData.cities.length - 1) {
+                {{city}}
+                }
+                }
+            </span>
+            @if (educationData.isCertificated) {
+            <span class="fs-4 text-secondary">Cerficated</span>
+            }
+            @if (!educationData.isCertificated) {
+            <span class="fs-4 text-secondary">Not Cerficated</span>
+            }
+        </div>
+        <div class="pt-4">
+            <a [href]="educationData.enrolmentUrl" target="_blank"
+                class="btn custom-btn-primary w-100 fs-4 fw-bold text-light">Enroll Now</a>
+        </div>
+    </div>
+    <!-- enrollment card end -->
+    <!-- details field begin -->
+    <div class="p-5 mt-3 border-top">
+        <!-- navbar begin -->
+        <div class="w-100 d-flex justify-content-between align-items-center border-bottom">
+            <span class="text-center py-2 w-4 fs-5 custom-navbar-options"
+                (click)="changeSelectedOpt('description')"
+                [ngClass]="{'selected-option-mobile': selectedOption === 'description'}">Description</span>
+            <span class="text-center py-2 w-4 fs-5 custom-navbar-options"
+                (click)="changeSelectedOpt('objectives')"
+                [ngClass]="{'selected-option-mobile': selectedOption === 'objectives'}">Learning Objectives</span>
+            <span class="text-center py-2 w-4 fs-5 custom-navbar-options"
+                (click)="changeSelectedOpt('methodology')"
+                [ngClass]="{'selected-option-mobile': selectedOption === 'methodology'}">Methodology &
+                Implementation</span>
+        </div>
+        <div class="w-100 d-flex justify-content-between align-items-center border-bottom">
+            <span class="text-center py-2 w-6 fs-5 custom-navbar-options"
+                (click)="changeSelectedOpt('assesment')"
+                [ngClass]="{'selected-option-mobile': selectedOption === 'assesment'}">Assesment Implementation</span>
+            <span class="text-center py-2 w-6 fs-5 custom-navbar-options"
+                (click)="changeSelectedOpt('dailyProgram')"
+                [ngClass]="{'selected-option-mobile': selectedOption === 'dailyProgram'}">Daily Program</span>
+        </div>
+        <!-- navbar end -->
+        <div>
+            <!-- description begin -->
+            @if (selectedOption === 'description') {
+            <div class="p-1 w-100 d-flex flex-column">
+                <span class="py-1 fs-2">Description</span>
+                @for (passage of educationData.description; track $index) {
+                <span class="py-3 fs-5">{{passage}}</span>
+                }
+            </div>
+            }
+            <!-- description end -->
+            <!-- learning objectives begin -->
+            @if (selectedOption === 'objectives') {
+            <div class="p-1 w-100 d-flex flex-column">
+                <span class="py-1 fs-2">Learning Objectives</span>
+                @for (passage of educationData.objectives; track $index) {
+                <div class="d-flex align-items-start">
+                    <i class="py-2 bi bi-arrow-right-short pe-3"></i>
+                    <span class="py-2 fs-5">{{passage}}</span>
+                </div>
+                }
+            </div>
+            }
+            <!-- learning objectives end -->
+            <!-- Methodology and Implementation begin -->
+            @if (selectedOption === 'methodology') {
+            <div class="p-1 w-100 d-flex flex-column">
+                <span class="py-1 fs-2">Methodology and Implementation</span>
+                @for (passage of educationData.methodology; track $index) {
+                <div class="d-flex align-items-center">
+                    <span class="py-2 fs-5">{{passage}}</span>
+                </div>
+                }
+            </div>
+            }
+            <!-- Methodology and Implementation end -->
+            <!-- Assesment Implementation begin -->
+            @if (selectedOption === 'assesment') {
+            <div class="p-1 w-100 d-flex flex-column">
+                <span class="py-1 fs-2">Assesment Implementation</span>
+                @for (passage of educationData.assesmentImplementation; track $index) {
+                <div class="d-flex align-items-center">
+                    <span class="py-2 fs-5">{{passage}}</span>
+                </div>
+                }
+            </div>
+            }
+            <!-- Assesment Implementation end -->
+            <!-- Daily program begin -->
+            @if (selectedOption === 'dailyProgram') {
+            <div class="p-1 w-100 d-flex flex-column">
+                <span class="py-1 fs-1">Daily Program</span>
+                @for (passage of educationData.dailyProgram; track $index) {
+                <span class="px-2 fs-2">Day: {{$index + 1}} {{passage.title}}</span>
+                <!-- morning session begin -->
+                <div class="px-3 fs-3">
+                    <span>Morning Session</span>
+                    @for (data of passage.morningSession; track $index) {
+                    <div class="px-3 d-flex align-items-center">
+                        <i class="bi bi-arrow-right-short pe-3"></i>
+                        <span class="py-2 fs-5">{{data}}</span>
+                    </div>
+                    }
+                </div>
+                <!-- morning session end -->
+                <!-- afternoon session begin -->
+                <div class="px-3 fs-3 mb-5">
+                    <span>Afternoon Session</span>
+                    @for (item of passage.afternoonSession; track $index) {
+                    <div class="px-3 d-flex align-items-center">
+                        <i class="bi bi-arrow-right-short pe-3"></i>
+                        <span class="py-2 fs-5">{{item}}</span>
+                    </div>
+                    }
+                </div>
+                <!-- afternoon session end -->
+                }
+            </div>
+            }
+            <!-- Daily program end -->
+        </div>
+    </div>
+    <!-- details field end -->
+</div>
+<!-- mobile end -->

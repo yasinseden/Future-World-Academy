@@ -20,7 +20,7 @@ export class VocationalEducationDetailComponent {
     private destroy$ = new Subject<void>();
   
     constructor(private educationService: EducationsService) {
-      this.educationService.schoolEducationsObservable$
+      this.educationService.vocationalEducationsObservable$
         .pipe(takeUntil(this.destroy$))
         .subscribe((data) => {
           this.educationData = data;

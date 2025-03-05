@@ -44,7 +44,8 @@ export class NavbarComponent {
 
     if (active === 3) {
       this.toggleCoursesLinks();
-    }
+    };
+    this.closeNavBar();
   }
 
   isCoursesLinksOpen: boolean = false;

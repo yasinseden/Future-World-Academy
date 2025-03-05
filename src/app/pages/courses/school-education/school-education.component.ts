@@ -16,7 +16,6 @@ export class SchoolEducationComponent {
   isDetailsOpen: boolean = false;
   schoolEducation: EducationModel[];
   detailedData!: EducationModel;
-  mock: any[] = [1,1,1,1,1,1,1,,1,1,1]
 
   constructor(private educationService: EducationsService, private router: Router) {
     this.schoolEducation = educationService.getSchoolEducation()
@@ -27,5 +26,6 @@ export class SchoolEducationComponent {
     this.educationService.updateObservingSchoolEducationData(edData);
     this.router.navigate([path])
     this.detailedData = this.schoolEducation[edData];
+    window.scrollTo({top: 0, behavior: 'instant'});
   }
 }
