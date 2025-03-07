@@ -10,7 +10,7 @@
 }
 
 .custom-bg {
-    background-image: url('../../../assets/images/img-4.jpg');
+    // background-image: url('../../../assets/images/img-4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -64,18 +64,18 @@
 
 .hover-me {
     display: none;
-    z-index: 999;
+    z-index: 998;
 }
 
 .custom-location-icon {
     color: var(--danger-color-500);
     cursor: pointer;
-    
+
     &:hover {
         color: var(--secondary-color-300);
-        z-index: 999 !important;
+        z-index: 998 !important;
 
-        & + .hover-me {
+        &+.hover-me {
             display: flex;
         }
     }
@@ -83,4 +83,19 @@
 
 .hover-me:hover {
     display: flex;
+}
+
+.custom-location-icon-mobile {
+    color: var(--danger-color-500);
+}
+
+.custom-info-card-mobile {
+    transition: transform 0.75s ease-in-out;
+    background: var(--primary-color-500);
+    top: 6rem;
+    z-index: 999;
+}
+
+.custom-info-card-mobile-out {
+    transform: translateX(-150%);
 }

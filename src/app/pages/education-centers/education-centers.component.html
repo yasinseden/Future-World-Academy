@@ -1,4 +1,5 @@
-<div class="w-100 custom-font-size" style="background-image: url(../assets/);">
+<!-- desktop begin -->
+<div class="w-100 d-none d-md-block custom-font-size" style="background-image: url(../assets/);">
   <!-- title and top image begin -->
   <div class="d-flex flex-column align-items-center justify-content-center align-items-center py-5 w-100"
     style="background-color: var(--primary-color-300); height: 95vh;">
@@ -22,12 +23,13 @@
           </div>
           <div class="w-50 p-5 d-flex flex-column justify-content-center align-items-center">
             <div class="custom-box">
-              <span>
+              <span class="fs-4">
                 {{city.text}}
               </span>
             </div>
             <div class="d-flex justify-content-end w-100 pe-3">
-              <button class="btn custom-btn-secondary mt-4 text-light fw-bold" (click)="toggleTravelGuideModel($index)">Open Travel Guide</button>
+              <button class="btn custom-btn-secondary mt-4 text-light fw-bold"
+                (click)="toggleTravelGuideModel($index)">Open Travel Guide</button>
             </div>
           </div>
         </div>
@@ -87,16 +89,82 @@
     }
   </div>
 </div>
+<!-- desktop end -->
+<!-- mobile begin -->
+<div class="w-100 d-md-none overflow-hidden" style="background-image: url(../assets/);">
+  <!-- title and top image begin -->
+  <div class="d-flex flex-column align-items-center py-5 w-100"
+    style="background-color: var(--primary-color-300); height: 100vh;">
+    <div class="py-5 d-flex justify-content-center">
+      <span class="fw-bold text-white pt-4" style="font-size: 3rem;">EDUCATION CENTERS</span>
+    </div>
+    <div class="d-flex justify-content-center pt-4 mt-5 align-items-center position-relative"
+      style="width: 1200px; height: 500px;">
+      <img src="../assets/images/education-centers/europe-6.png" height="100%" width="75%">
+      @for (city of cities; track $index) {
+      <i (click)="toggleEducationCenterCard($index)"
+        class="bi bi-geo-alt-fill position-absolute fs-3 custom-location-icon-mobile"
+        [ngStyle]="{'bottom': city.position.bottom + '%', 'left': city.position.left + '%'}"></i>
+      <div [id]="'card-mobile' + $index"
+        class="position-fixed w-10 px-2 rounded-4 text-light flex align-items-end flex-column shadow-lg custom-info-card-mobile custom-info-card-mobile-out">
+        <!-- 'color': city.position.bottom > 50 ? 'red' : 'yellow' -->
+        <i class="bi bi-x-circle fs-2" (click)="toggleEducationCenterCard($index)"></i>
+        <span class="w-100 d-inline-block text-center fs-2 fw-bold">{{city.name}}</span>
+        <div class="d-flex flex-column">
+          <div class="d-flex justify-content-center">
+            <img [src]="city.img" style="width: 75%;">
+          </div>
+          <div class=" p-5 d-flex flex-column justify-content-center align-items-center">
+            <div class="custom-box">
+              <span>
+                {{city.text}}
+              </span>
+            </div>
+            <div class="d-flex justify-content-center w-100 pt-2 pe-3">
+              <button class="btn custom-btn-secondary mt-4 text-light fw-bold"
+                (click)="toggleTravelGuideModelMobile($index)">Open Travel Guide</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+  <!-- title and top image end -->
+  <div class="pt-5 my-5 d-flex flex-column align-items-center">
+    @for (city of cities; track $index) {
+    <div class="w-100 d-flex justify-content-center  py-5 my-5" style="background-color: var(--primary-color-900);">
+      <div class="d-flex align-items-center flex-column text-light">
+        <span class="fw-bold pb-5" style="font-size: 5rem; font-style:oblique;">{{city.name}}</span>
+        <div class="px-2">
+          <img [src]="city.img" width="100%">
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center px-3">
+          <div class="custom-box m-5 d-flex flex-column">
+            <span class="fs-5 py-1" style="font-style: italic;">{{city.text}}</span>
+          </div>
+          <div class="">
+            <button id="toggleButton" class="btn custom-btn-secondary mt-2 py-2 text-light fs-5 fw-bold"
+              (click)="toggleTravelGuideModelMobile($index)">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>
+<!-- mobile end -->
 
-<!-- travel guide modal begin -->
+
+<!-- travel guide modal desktop begin -->
 @for (cityData of cities; track $index) {
 <div [id]="'hiddenElementId' + $index"
-  class="hiddenElement w-100 d-flex justify-content-center align-items-center custom-font-size">
+  class="hiddenElement w-100 d-none d-md-flex justify-content-center align-items-center custom-font-size">
   <div
-    class="hidden position-fixed top-50 start-50 translate-middle w-100 d-flex justify-content-center align-items-center z-3"
-    style="height: 100vh; background-color: rgba(156, 156, 156, 0.75); background-image: url('../../../assets/images/img-2.jpeg');
+    class="position-fixed top-50 start-50 translate-middle w-100 d-flex justify-content-center align-items-center z-3"
+    style="height: 100vh; background-color: rgba(156, 156, 156, 0.75);
          background-repeat: no-repeat;
-         background-size: cover;">
+         background-size: cover;" [ngStyle]="{'background-image': 'url(' + cityData.imgbg + ')'}">
     <div class="w-75 h-75" style="border-radius: 2rem; background-color: rgba(0, 0, 0, 0.55);">
       <!-- header begin -->
       <div class="d-flex justify-content-between px-3 py-2">
@@ -145,4 +213,62 @@
   </div>
 </div>
 }
-<!-- travel guide modal end -->
+<!-- travel guide modal desktop end -->
+
+<!-- travel guide modal mobile begin -->
+@for (cityDataMobile of cities; track $index) {
+<div [id]="'hiddenElementId-mobile' + $index"
+  class="hiddenElement w-100 d-flex d-md-none justify-content-center align-items-center custom-font-size">
+  <div class="position-fixed top-0 left-0 px-2 w-100 d-flex justify-content-center align-items-center z-3" style="height: 100vh; background-color: rgba(156, 156, 156, 0.75);;
+           background-repeat: no-repeat;
+           background-size: cover;"
+           [ngStyle]="{'background-image': 'url(' + cityDataMobile.imgbg + ')'}">
+    <div class="w-100" style="border-radius: 2rem; background-color: rgba(0, 0, 0, 0.55); height: 90%;">
+      <!-- header begin -->
+      <div class="d-flex justify-content-between px-3 py-2">
+        <div class="fw-bold text-light px-3" style="font-size: 3rem;">{{cities[$index].name}}</div>
+        <i class="bi bi-x-circle fs-2 text-light" style="cursor: pointer;"
+          (click)="toggleTravelGuideModelMobile(activeCityIndex)"></i>
+      </div>
+      <!-- header end -->
+      <!-- body begin -->
+      <div class="px-5 h-75">
+        <div class="h-100">
+          <div class="d-flex align-items-center overflow-hidden" style="height: 35%;">
+            <img [src]="currentSlide ? currentSlide.img : cityDataMobile.slides[0].img" width="100%" alt="">
+          </div>
+          <div class="d-flex flex-column justify-content-between" style="height: 85%;">
+            <div class="py-3 overflow-auto mb-3 h-100">
+              <span class="fs-5 text-light">
+                {{currentSlide ? currentSlide.text : cityDataMobile.slides[0].text}}
+              </span>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center" style="height: 25%;">
+              <carousel class="d-flex justify-content-center align-items-center" [itemsPerSlide]="2"
+                [singleSlideOffset]="false" [interval]="0" [indicatorsByChunk]="true">
+                @for(slide of cities[$index].slides; track $index) {
+                <slide class="rounded-4 overflow-hidden mx-2 border border-2" style="cursor: pointer; min-height: 90%;"
+                  [ngClass]="{'border-5': $index === activeSlide}" (click)="openSlideDetails($index)">
+                  <img [src]="slide.img" alt="image slide" style="display: block; width: 100%;">
+                  <div class="carousel-caption">
+                  </div>
+                </slide>
+                }
+              </carousel>
+              <!-- <div class="mt-3 rounded-pill bg-light">
+                       <i class="bi bi-circle-fill mx-2"></i>
+                       <i class="bi bi-circle mx-2"></i>
+                       <i class="bi bi-circle mx-2"></i>
+                       <i class="bi bi-circle mx-2"></i>
+                     </div> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- body end -->
+    </div>
+  </div>
+</div>
+}
+<!-- travel guide modal mobile end -->

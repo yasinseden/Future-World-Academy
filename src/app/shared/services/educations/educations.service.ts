@@ -675,6 +675,560 @@ export class EducationsService {
       ],
       isCertificated: true
     },
+
+    {
+      img: '../assets/images/school-education/empowering-youth.jpg',
+      name: 'Empowering Youth through Sport: Strategies for Educational Success',
+      preInfo: '"Empowering Youth through Sport: Strategies for Educational Success" is a transformative course designed to harness the power of sports-based youth development to promote educational success and holistic well-being. Aligned with the objectives of the Erasmus+ Programme, this course empowers educators, coaches, and youth leaders to leverage sports as a vehicle for positive youth development, fostering essential life skills, academic achievement, and personal growth. By integrating sports-based approaches into educational settings, participants can unlock the full potential of young people, nurturing their physical, cognitive, and socio-emotional development.',
+      cost: '80 €/Day',
+      language: 'Ebglish',
+      enrolmentUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScFpK3UGE6JCdto_HpP36LXsI6UHVzyPvdhp9sF4tDsZlmcww/viewform',
+      duration: {
+        period: 'Days',
+        amount: 5
+      },
+      cities: ['Antalya', 'Bitola'],
+      description: [
+        "This course offers a comprehensive exploration of sports-based youth development strategies aimed at enhancing educational success. Through a blend of theoretical insights, practical workshops, and experiential learning activities, participants will gain a deep understanding of how sports can be used as a catalyst for positive change in the lives of young people. From promoting leadership and teamwork to fostering resilience and self-confidence, sports-based youth development offers a holistic approach to education that transcends traditional classroom boundaries. Participants will learn how to design and implement effective sports programs that not only enhance academic achievement but also promote lifelong skills and values that young people can carry with them into adulthood."
+      ],
+      objectives: [
+        "Understand the principles and theoretical frameworks of sports-based youth development.",
+        "Explore the role of sports in promoting academic achievement, leadership, teamwork, and resilience among young people.",
+        "Learn how to design and implement effective sports programs that align with educational objectives and youth development goals.",
+        "Gain practical skills in coaching, mentoring, and facilitating sports-based activities for youth.",
+        "Discover strategies for fostering positive youth-adult relationships and creating inclusive and supportive sports environments.",
+        "Explore the impact of sports on holistic youth development, including physical, cognitive, and socio-emotional well-being.",
+        "Reflect on personal experiences and insights to enhance their effectiveness as youth leaders, educators, and coaches.",
+      ],
+      methodology: [
+        "Theoretical Insights: Explore key concepts and theoretical frameworks related to sports-based youth development through lectures, readings, and discussions.",
+
+        "Practical Workshops: Engage in hands-on workshops and experiential learning activities to develop coaching, mentoring, and facilitation skills.",
+
+        "Case Studies: Analyze real-world examples of successful sports-based youth development programs and initiatives.",
+
+        "Group Projects: Collaborate with peers to design and present innovative sports programs tailored to specific educational settings and target populations.",
+
+        "Reflection and Feedback: Reflect on personal experiences and receive constructive feedback from peers and facilitators to enhance professional practice.",
+      ],
+      assesmentImplementation: [
+        "Project-Based Assessment: Develop and present a comprehensive sports-based youth development program proposal, including goals, objectives, activities, and evaluation strategies.",
+
+        "Reflective Journals: Maintain a reflective journal throughout the course to document insights, challenges, and lessons learned.",
+
+        "Peer Evaluation: Provide feedback to peers on their project proposals and presentations, focusing on strengths, areas for improvement, and actionable recommendations.",
+
+        "Practical Demonstrations: Demonstrate coaching, mentoring, or facilitation skills through practical demonstrations or role-playing exercises.",
+
+        "Final Reflection: Write a final reflection essay synthesizing key learnings and outlining personal and professional action steps for future implementation.",
+      ],
+      dailyProgram: [
+        {
+          title: "Foundations of Sports-Based Youth Development",
+          morningSession: [
+            "Welcome and Course Introduction",
+            "Theoretical Frameworks of Sports-Based Youth Development"
+          ],
+          afternoonSession: [
+            "Exploring the Impact of Sports on Educational Success",
+            "Practical Workshop: Designing Effective Sports Programs for Youth"
+          ]
+        },
+        {
+          title: "Coaching and Mentoring for Positive Youth Development",
+          morningSession: [
+            "Coaching and Mentoring in Sports-Based Youth Development",
+            "Hands-On Workshop: Developing Coaching and Mentoring Skills"
+          ],
+          afternoonSession: [
+            "Case Studies: Best Practices in Coaching and Mentoring Youth Athletes",
+            "Group Project: Designing a Coaching or Mentoring Plan for Youth Participants"
+          ]
+        },
+        {
+          title: "Teamwork, Leadership, and Character Development",
+          morningSession: [
+            "Promoting Teamwork and Leadership Through Sports",
+            "Practical Workshop: Facilitating Team-Building Activities"
+          ],
+          afternoonSession: [
+            "Character Development and Values Education in Sports",
+            "Reflection and Feedback: Integrating Leadership and Character Development Into Sports Programs"
+          ]
+        },
+        {
+          title: "Resilience, Well-being, and Inclusion",
+          morningSession: [
+            "Building Resilience and Well-being Through Sports",
+            "Hands-On Workshop: Addressing Mental Health and Well-being in Youth Sports"
+          ],
+          afternoonSession: [
+            "Creating Inclusive and Supportive Sports Environments",
+            "Case Studies: Strategies for Promoting Inclusion and Diversity in Youth Sports"
+          ]
+        },
+        {
+          title: "Implementation and Action Planning",
+          morningSession: [
+            "Implementation Strategies for Sports-Based Youth Development Programs",
+            "Action Planning: Developing a Roadmap for Program Implementation"
+          ],
+          afternoonSession: [
+            "Project Presentations: Sharing and Feedback",
+            "Closing Ceremony: Certificate Presentation and Reflections on Learning"
+          ]
+        }
+      ],
+      isCertificated: true
+    },
+
+    {
+      img: '../assets/images/school-education/scout.jpg',
+      name: 'Scout-Based Learning Adventures: Integrating Classroom Curriculum with Outdoor Exploration',
+      preInfo: '"Scout-Based Learning Adventures: Integrating Classroom Curriculum with Outdoor Exploration" is a dynamic course designed to equip educators with innovative strategies to integrate outdoor experiences into classroom learning. Inspired by the principles of scouting and outdoor education, this course encourages educators to harness the power of nature as a dynamic learning environment to enhance students academic, social, and emotional development.',
+      cost: '80 €/Day',
+      language: '',
+      enrolmentUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScFpK3UGE6JCdto_HpP36LXsI6UHVzyPvdhp9sF4tDsZlmcww/viewform',
+      duration: {
+        period: 'Days',
+        amount: 5
+      },
+      cities: ['Antalya', 'Bitola'],
+      description: [
+        "This course provides educators with practical tools and resources to design and implement scout-based learning adventures that seamlessly integrate with classroom curriculum. Through hands-on activities, outdoor expeditions, and collaborative projects, participants will learn how to leverage the natural world as a rich educational resource to engage students, foster curiosity, and promote experiential learning. By blending traditional teaching methods with outdoor exploration, educators will inspire a sense of wonder, curiosity, and stewardship for the natural world in their students."
+      ],
+      objectives: [
+        "Understand the principles of scout-based learning and its benefits for student development.",
+        "Learn how to integrate outdoor experiences into classroom curriculum to enhance learning outcomes.",
+        "Explore practical strategies for planning and implementing scout-based learning adventures across subject areas.",
+        "Develop skills in using outdoor environments as dynamic learning spaces to engage students in hands-on, experiential learning.",
+        "Gain confidence in facilitating outdoor expeditions and fostering meaningful connections between classroom learning and real-world experiences.",
+        "Foster students' curiosity, creativity, and problem-solving skills through scout-based learning activities.",
+        "Promote environmental stewardship and a sense of connection to the natural world among students.",
+      ],
+      methodology: [
+        "Theoretical Framework: Explore key concepts and theories related to scout-based learning, outdoor education, and environmental stewardship.",
+
+        "Practical Workshops: Engage in hands-on activities, outdoor expeditions, and scout-based learning adventures to experience firsthand the benefits of outdoor exploration.",
+
+        "Curriculum Integration: Identify opportunities to align scout-based learning adventures with classroom curriculum across subject areas.",
+
+        "Outdoor Skills Training: Learn essential outdoor skills and safety practices to facilitate safe and enjoyable outdoor experiences for students.",
+
+        "Collaborative Projects: Work collaboratively with peers to design and implement scout-based learning activities and projects that address curriculum standards and learning objectives.",
+
+        "Reflective Practice: Reflect on personal experiences, insights, and challenges related to scout-based learning and outdoor education, and consider implications for teaching practice.",
+
+        "Peer Feedback: Provide and receive constructive feedback on lesson plans, outdoor activities, and classroom experiences to enhance scout-based learning practice.",
+      ],
+      assesmentImplementation: [
+        "Lesson Plan Development: Design a scout-based learning adventure that integrates outdoor exploration with classroom curriculum, incorporating learning objectives, activities, and assessment strategies.",
+
+        "Outdoor Expedition: Lead a scout-based learning adventure in an outdoor setting, assessing student engagement, participation, and learning outcomes.",
+
+        "Reflective Journal: Maintain a reflective journal documenting personal experiences, insights, and reflections on scout-based learning practice and outdoor education.",
+
+        "Peer Evaluation: Provide feedback to peers on their lesson plans, outdoor activities, and teaching practice, offering constructive suggestions for improvement and highlighting strengths.",
+
+        "Final Project: Create a culminating project that demonstrates understanding of key concepts and strategies for integrating scout-based learning adventures into classroom curriculum.",
+      ],
+      dailyProgram: [
+        {
+          title: "Introduction to Scout-Based Learning",
+          morningSession: [
+            "Welcome and Course Overview",
+            "Understanding Scout-Based Learning: Principles and Benefits"
+          ],
+          afternoonSession: [
+            "Exploring Outdoor Education: Connecting Classroom Learning with Nature",
+            "Introduction to Outdoor Skills and Safety Practices"
+          ]
+        },
+        {
+          title: "Planning Scout-Based Learning Adventures",
+          morningSession: [
+            "Curriculum Integration: Identifying Opportunities for Outdoor Exploration in Classroom Curriculum",
+            "Designing Scout-Based Learning Adventures: Setting Learning Objectives and Activities"
+          ],
+          afternoonSession: [
+            "Practical Workshop: Planning and Preparing for Outdoor Expeditions",
+            "Outdoor Skills Training: Navigation, Shelter Building, and Campfire Cooking"
+          ]
+        },
+        {
+          title: "Implementing Scout-Based Learning Adventures",
+          morningSession: [
+            "Leading Outdoor Expeditions: Facilitating Meaningful Learning Experiences in Nature",
+            "Engaging Students in Scout-Based Learning Activities: Hands-on Experiences and Experiential Learning"
+          ],
+          afternoonSession: [
+            "Collaborative Project: Designing and Testing Scout-Based Learning Activities",
+            "Case Studies: Analyzing Successful Examples of Scout-Based Learning Adventures"
+          ]
+        },
+        {
+          title: "Assessing Learning Outcomes and Reflective Practice",
+          morningSession: [
+            "Assessing Student Learning: Strategies for Evaluating Outdoor Experiences and Learning Outcomes",
+            "Reflective Practice: Journaling and Peer Feedback on Outdoor Expeditions"
+          ],
+          afternoonSession: [
+            "Peer Evaluation: Providing Constructive Feedback on Lesson Plans and Teaching Practice",
+            "Action Planning: Setting Goals for Continued Growth and Development in Scout-Based Learning"
+          ]
+        },
+        {
+          title: "Culminating Projects and Next Steps",
+          morningSession: [
+            "Final Project Presentations: Sharing and Reflecting on Scout-Based Learning Adventures",
+            "Course Evaluation and Closing Remarks"
+          ],
+          afternoonSession: [
+            "Networking and Collaboration: Building a Community of Practice for Scout-Based Learning Educators",
+            "Action Planning: Identifying Next Steps for Integrating Scout-Based Learning into Teaching Practice"
+          ]
+        }
+      ],
+      isCertificated: true
+    },
+
+    {
+      img: '../assets/images/school-education/1.jpg',
+      name: 'Cultivating Cultural Sensitivity: Enhancing School-Parent Communication',
+      preInfo: "Welcome to 'Cultivating Cultural Sensitivity: Enhancing School-Parent Communication,'F a course designed to empower educators with the tools and insights needed to foster cultural sensitivity in their interactions with parents from diverse backgrounds. In today's interconnected world, effective communication between schools and parents is vital for supporting student success. By embracing cultural sensitivity, educators can establish trust, strengthen relationships, and create inclusive learning environments where every family feels valued and respected.",
+      cost: '80 €/Day',
+      language: 'English',
+      enrolmentUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScFpK3UGE6JCdto_HpP36LXsI6UHVzyPvdhp9sF4tDsZlmcww/viewform',
+      duration: {
+        period: 'Days',
+        amount: 5
+      },
+      cities: ['Antalya', 'Bitola'],
+      description: [
+        "Dive into the heart of cultural sensitivity with this transformative course, which delves into the nuances of school-parent communication across diverse cultural landscapes. Through engaging discussions and practical strategies, participants will explore the pivotal role of cultural sensitivity in fostering understanding and collaboration between schools and parents. From recognizing and respecting cultural differences to overcoming language barriers, educators will learn how to adapt their communication styles to effectively engage with families from various cultural backgrounds.",
+
+        "Interactive workshops, real-life case studies, and role-playing exercises will provide educators with hands-on experience in navigating cross-cultural communication challenges. By honing their cultural competence, educators will be equipped to establish positive and meaningful partnerships with parents, ultimately enhancing student learning and well-being. Join us on this enriching journey as we cultivate a culture of inclusivity and mutual respect in school-parent relationships.",
+      ],
+      objectives: [
+        "Understand the significance of cultural sensitivity in school - parent communication and its impact on student success.",
+        "Recognize cultural differences and diversity within the school community.",
+        "Develop strategies for fostering trust, respect, and collaboration with parents from diverse cultural backgrounds.",
+        "Learn effective communication techniques for bridging language barriers and promoting understanding.",
+        "Explore culturally responsive approaches to parent engagement and involvement in their children's education.",
+        "Identify potential challenges and barriers to effective cross- cultural communication and develop strategies for overcoming them.",
+        "Reflect on personal biases and assumptions and cultivate a mindset of cultural humility and openness.",
+        "Create an action plan for implementing culturally sensitive communication practices in their interactions with parents.",
+      ],
+      methodology: [
+        "Understanding Cultural Sensitivity: Explore the concept and importance of cultural sensitivity in school-parent communication.",
+
+        "Recognizing Cultural Diversity: Learn to recognize and appreciate cultural differences and diversity within the school community.",
+
+        "Effective Communication Strategies: Develop practical communication strategies for engaging with parents from diverse cultural backgrounds.",
+
+        "Bridging Language Barriers: Explore techniques for overcoming language barriers and promoting effective communication.",
+
+        "Culturally Responsive Parent Engagement: Learn approaches for fostering meaningful and inclusive parent engagement in their children's education.",
+
+        "Addressing Challenges: Identify common challenges and barriers to cross-cultural communication and develop strategies for addressing them.",
+
+        "Reflective Practice: Engage in self-reflection and peer feedback to enhance cultural awareness and sensitivity.",
+
+        "Action Planning: Develop an action plan for implementing culturally sensitive communication practices in participants' professional practice."
+      ],
+      assesmentImplementation: [],
+      dailyProgram: [
+        {
+          title: "Understanding Cultural Sensitivity",
+          morningSession: [
+            "Introduction to Cultural Sensitivity in School-Parent Communication",
+            "Importance and Benefits of Culturally Responsive Practices"
+          ],
+          afternoonSession: [
+            "Exploring Cultural Diversity within the School Community",
+            "Recognizing Implicit Bias and Stereotypes"
+          ]
+        },
+        {
+          title: "Effective Communication Strategies",
+          morningSession: [
+            "Building Trust and Rapport with Diverse Parents",
+            "Culturally Appropriate Communication Styles and Etiquette"
+          ],
+          afternoonSession: [
+            "Active Listening and Empathetic Communication Techniques",
+            "Role-Playing Scenarios: Applying Effective Communication Strategies"
+          ]
+        },
+        {
+          title: "Bridging Language Barriers",
+          morningSession: [
+            "Strategies for Overcoming Language Barriers in School-Parent Communication",
+            "Utilizing Interpreters and Translation Services Effectively"
+          ],
+          afternoonSession: [
+            "Culturally Sensitive Language Use and Translation Practices",
+            "Interactive Workshops: Practicing Communication in Different Languages"
+          ]
+        },
+        {
+          title: "Culturally Responsive Parent Engagement",
+          morningSession: [
+            "Engaging Diverse Parents in Their Children's Education",
+            "Involving Parents in School Decision-Making Processes"
+          ],
+          afternoonSession: [
+            "Creating Inclusive Spaces for Parent Involvement and Participation",
+            "Collaborative Projects: Co-creating Educational Resources with Parents"
+          ]
+        },
+        {
+          title: "Reflective Practice and Action Planning",
+          morningSession: [
+            "Reflective Journaling: Documenting Insights and Learnings",
+            "Peer Feedback and Collaborative Reflection"
+          ],
+          afternoonSession: [
+            "Developing an Action Plan for Implementing Culturally Sensitive Communication Practices",
+            "Course Evaluation and Closing Remarks"
+          ]
+        }
+      ],
+      isCertificated: true
+    },
+
+    {
+      img: '../assets/images/school-education/2.jpg',
+      name: 'Project-Based Learning: Engaging Students Through Inquiry and Exploration',
+      preInfo: '"Project-Based Learning: Engaging Students Through Inquiry and Exploration" is a dynamic course designed to empower educators with the knowledge and skills to implement effective project-based learning (PBL) experiences in their classrooms. Grounded in the principles of inquiry and exploration, PBL offers students the opportunity to delve deeply into meaningful, real-world challenges, fostering creativity, critical thinking, collaboration, and communication skills. Aligned with the objectives of the Erasmus+ Programme, this course addresses the need for innovative approaches to education that promote active learning, student engagement, and 21st-century skills development. By equipping educators with practical strategies and tools for designing and facilitating PBL experiences, the course aims to inspire transformative teaching practices that prepare students for success in an ever-changing world.',
+      cost: '80 €/Day',
+      language: 'English',
+      enrolmentUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScFpK3UGE6JCdto_HpP36LXsI6UHVzyPvdhp9sF4tDsZlmcww/viewform',
+      duration: {
+        period: 'Days',
+        amount: 5
+      },
+      cities: ['Antalya', 'Bitola'],
+      description: [
+        "This course is designed for educators across all subject areas and grade levels who are interested in implementing project-based learning in their classrooms. Participants will explore the key principles, methodologies, and best practices of PBL, gaining practical strategies and tools to design, implement, and assess PBL experiences that engage and inspire students.",
+
+        "Understanding Project-Based Learning: Participants will gain an understanding of the core principles and characteristics of PBL, exploring how it differs from traditional instructional approaches and its potential benefits for student learning and motivation.",
+
+        "Designing PBL Experiences: Participants will learn how to design authentic, inquiry-driven projects that align with curriculum standards and learning objectives. They will explore strategies for selecting and framing compelling driving questions, designing authentic assessments, and scaffolding student inquiry and exploration.",
+
+        "Facilitating PBL: Participants will explore facilitation strategies and techniques for supporting student learning and inquiry throughout the PBL process. They will learn how to foster collaboration, critical thinking, and metacognitive skills, and how to effectively manage and assess student progress.",
+      ],
+      objectives: [
+        "Understand the principles and benefits of project-based learning as an instructional approach.",
+        "Design authentic, inquiry-driven projects that engage and motivate students.",
+        "Facilitate student inquiry and exploration throughout the project-based learning process.",
+        "Scaffold student learning and provide support as needed during project implementation.",
+        "Assess student learning and growth in project-based learning environments using authentic assessment methods.",
+        "Reflect on their own practice and identify areas for continued growth and development in project-based learning.",
+      ],
+      methodology: [
+        "Interactive Workshops: Participants will engage in interactive workshops where they will explore the principles and methodologies of project-based learning. Through hands-on activities, case studies, and discussions, participants will deepen their understanding of PBL and begin to design their own projects.",
+
+        "Design Studios: Participants will work in design studios to develop and refine their project ideas, receiving feedback and guidance from peers and instructors. They will collaborate with colleagues to brainstorm driving questions, develop project plans, and create assessment rubrics.",
+
+        "Action Research Projects: Participants will have the opportunity to implement a project-based learning experience in their own classrooms and conduct action research to evaluate its effectiveness. They will collect data on student learning outcomes, engagement levels, and collaboration skills, and reflect on their experiences to inform future practice.",
+      ],
+      assesmentImplementation: [
+        "Authentic Assessments: Participants will be assessed based on their engagement in workshops and design studios, the quality of their project proposals and implementation plans, and their reflections on their experiences with project-based learning. Assessments will focus on the application of knowledge and skills in designing and facilitating PBL experiences.",
+
+        "Peer Feedback: Participants will engage in peer feedback activities, providing constructive feedback to their peers on their project proposals, design plans, and reflections. Peer feedback will promote collaboration and mutual learning among participants.",
+
+        "Self-Reflection: Participants will engage in self-reflection activities, such as journaling and goal-setting exercises, to evaluate their own learning and growth throughout the course. Self-reflection will encourage metacognition and self-directed learning.",
+      ],
+      dailyProgram: [
+        {
+          title: "Understanding Project-Based Learning",
+          morningSession: [
+            "Welcome and Introduction to Project-Based Learning",
+            "Workshop: Exploring the Principles and Benefits of PBL"
+          ],
+          afternoonSession: [
+            "Design Studio: Brainstorming Project Ideas and Driving Questions",
+            "Action Research Project: Planning for Implementation and Data Collection"
+          ]
+        },
+        {
+          title: "Designing Authentic Projects",
+          morningSession: [
+            "Workshop: Designing Authentic, Inquiry-Driven Projects",
+            "Demonstrations: Creating Engaging Driving Questions and Authentic Assessments"
+          ],
+          afternoonSession: [
+            "Design Studio: Developing Project Plans and Assessment Rubrics",
+            "Peer Feedback Session: Reviewing and Providing Feedback on Project Proposals"
+          ]
+        },
+        {
+          title: "Facilitating Student Inquiry",
+          morningSession: [
+            "Workshop: Facilitating Student Inquiry and Exploration",
+            "Case Study Analysis: Effective Facilitation Strategies for PBL"
+          ],
+          afternoonSession: [
+            "Action Research Project: Implementing PBL in the Classroom",
+            "Reflection and Goal-Setting: Identifying Challenges and Opportunities"
+          ]
+        },
+        {
+          title: "Scaffolding Learning and Providing Support",
+          morningSession: [
+            "Workshop: Scaffolding Learning and Providing Support in PBL",
+            "Demonstrations: Differentiated Instruction and Individualized Support"
+          ],
+          afternoonSession: [
+            "Action Research Project: Monitoring Student Progress and Providing Feedback",
+            "Peer Collaboration and Problem-Solving: Addressing Challenges and Sharing Solutions"
+          ]
+        },
+        {
+          title: "Assessing Learning in PBL Environments",
+          morningSession: [
+            "Workshop: Authentic Assessment in Project-Based Learning",
+            "Case Study Analysis: Assessing Student Learning and Growth"
+          ],
+          afternoonSession: [
+            "Action Research Project: Reflecting on Student Learning Outcomes and Next Steps",
+            "Closing Reflection and Certificate Distribution"
+          ]
+        }
+      ],
+      isCertificated: true
+    },
+
+    {
+      img: '../assets/images/school-education/3.jpg',
+      name: 'Unlocking Inclusion: Fostering Diversity & Equity in Schools',
+      preInfo: '"Unlocking Inclusion: Fostering Diversity & Equity in Schools" is a vital course aimed at equipping educators with the knowledge, skills, and strategies to create inclusive and equitable learning environments that honor diversity and promote social justice. Rooted in the objectives and priorities of the Erasmus+ Programme, this course seeks to enhance the quality and relevance of education and training, foster social cohesion and inclusion, and empower learners from diverse backgrounds to thrive and succeed. Did you know that according to UNESCO, education is a fundamental human right and a powerful tool for promoting social justice, equality, and inclusion? By addressing issues of diversity and equity in school communities, educators can help ensure that all students have access to high-quality education and opportunities for learning, regardless of their backgrounds, identities, or circumstances.',
+      cost: '80 €/Day',
+      language: 'English',
+      enrolmentUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScFpK3UGE6JCdto_HpP36LXsI6UHVzyPvdhp9sF4tDsZlmcww/viewform',
+      duration: {
+        period: 'Days',
+        amount: 5
+      },
+      cities: ['Antalya', 'Bitola'],
+      description: [
+        "This transformative course is designed for educators who are committed to creating safe, supportive, and inclusive learning environments where every student feels valued, respected, and empowered to succeed. Through a combination of theoretical insights, practical strategies, case studies, and interactive activities, participants will explore key concepts such as cultural competence, equity-mindedness, inclusive pedagogy, and anti-bias education.",
+
+        "Participants will learn how to recognize and address systemic inequities and barriers to learning, including racism, sexism, ableism, and other forms of discrimination. They will explore strategies for fostering cultural responsiveness, empathy, and solidarity, and for advocating for social justice and equity in their schools and communities.",
+
+        "This course is particularly relevant for educators who wish to deepen their understanding of diversity and equity issues, strengthen their capacity to support diverse learners, and create more inclusive and equitable learning environments for all students.",
+      ],
+      objectives: [
+        "Understand the concepts of diversity, equity, and inclusion and their importance in education, including their impact on student learning, well-being, and success.",
+        "Develop cultural competence and equity-mindedness, including an awareness of their own biases, privileges, and identities, and their implications for teaching and learning.",
+        "Learn strategies for fostering inclusive pedagogy and anti-bias education, including curriculum design, instructional practices, and classroom management strategies.",
+        "Explore ways to create safe, supportive, and affirming learning environments that honor diversity, promote belonging, and celebrate students' identities and experiences.",
+        "Gain insights into the impact of systemic inequities and barriers to learning, including racism, sexism, ableism, and other forms of discrimination, and strategies for addressing them.",
+        "Develop advocacy skills and strategies for promoting social justice and equity in their schools and communities, including allyship, advocacy, and community organizing.",
+      ],
+      methodology: [
+        "Interactive workshops and dialogue sessions: Participants will engage in interactive workshops, dialogue sessions, and critical reflections to deepen their understanding of diversity and equity issues and explore strategies for promoting social justice and inclusion in education. They will have opportunities to share experiences, perspectives, and best practices, and to collaborate on developing solutions to common challenges.",
+
+        "Case studies and storytelling: Case studies and storytelling will be used to illustrate real-world examples of diversity and equity initiatives in educational settings and to inspire participants to take action in their own contexts. Participants will learn from diverse perspectives, experiences, and voices, and explore strategies for applying lessons learned to their own practice.",
+
+        "Culturally responsive teaching and learning: Participants will explore culturally responsive teaching and learning approaches that honor and affirm students' cultural identities, languages, and lived experiences. They will learn how to integrate culturally relevant content, instructional strategies, and assessment practices into their teaching to promote engagement, achievement, and empowerment for all students.",
+
+        "Implementation: Participants will design and implement culturally responsive teaching and learning experiences that incorporate diverse perspectives, voices, and experiences into the curriculum. They will create opportunities for students to explore and critically analyze issues of diversity, equity, and social justice, and to connect their learning to their own lives and communities.",
+
+        "Equity audits and action planning: Participants will conduct equity audits of their school environments to assess the extent to which they are inclusive, equitable, and responsive to the needs of all students. They will identify areas of strength and areas for improvement and develop action plans for addressing equity gaps and promoting positive change.",
+
+        "Implementation: Participants will conduct equity audits using tools and protocols designed to assess the accessibility, inclusivity, and responsiveness of their school environments. They will analyze data, gather input from stakeholders, and identify priorities for action. They will develop action plans that outline goals, strategies, and timelines for addressing equity gaps and promoting systemic change.",
+      ],
+      assesmentImplementation: [
+        "Reflective journals and self-assessment: Participants will engage in reflective journaling and self-assessment activities to deepen their understanding of diversity and equity issues and to identify areas for growth and development. They will reflect on their beliefs, attitudes, and practices related to diversity and equity and set goals for ongoing learning and improvement.",
+
+        "Case study analysis and critical reflection: Participants will analyze case studies and engage in critical reflection activities to apply their learning to real-world scenarios and explore strategies for addressing diversity and equity challenges in educational settings. They will consider the implications of their decisions and actions for promoting social justice and inclusion and identify opportunities for advocacy and change.",
+
+        "Peer feedback and collaborative inquiry: Participants will provide feedback to their peers on their equity audits, action plans, and advocacy initiatives, offering insights, suggestions, and support for ongoing improvement. They will engage in collaborative inquiry and problem-solving, sharing resources, strategies, and best practices for promoting diversity and equity in their schools and communities.",
+
+        "Final project presentation and evaluation: Participants will present their equity audits, action plans, and advocacy initiatives to the group, sharing their goals, strategies, and intended outcomes. Presentations will be evaluated based on their clarity, coherence, and potential impact, and participants will receive feedback and support from peers and instructors.",
+      ],
+      dailyProgram: [
+        {
+          title: "Understanding Diversity and Equity",
+          morningSession: [
+            "Welcome and Course Overview",
+            "Introduction to Diversity, Equity, and Inclusion",
+            "Exploring Personal Identities and Biases"
+          ],
+          afternoonSession: [
+            "Workshop: Cultural Competence and Equity-Mindedness",
+            "Case Study Analysis: Promoting Equity in Education"
+          ]
+        },
+        {
+          title: "Culturally Responsive Teaching and Learning",
+          morningSession: [
+            "Culturally Responsive Pedagogy",
+            "Strategies for Culturally Responsive Teaching and Learning"
+          ],
+          afternoonSession: [
+            "Workshop: Designing Culturally Responsive Curriculum",
+            "Peer Collaboration and Feedback"
+          ]
+        },
+        {
+          title: "Equity Audits and Action Planning",
+          morningSession: [
+            "Introduction to Equity Audits",
+            "Conducting an Equity Audit of School Environments"
+          ],
+          afternoonSession: [
+            "Developing Equity Action Plans",
+            "Group Activity: Action Planning and Goal Setting"
+          ]
+        },
+        {
+          title: "Fostering Inclusive School Cultures",
+          morningSession: [
+            "Creating Safe and Affirming School Environments",
+            "Strategies for Promoting Inclusive School Cultures"
+          ],
+          afternoonSession: [
+            "Workshop: Building Community and Connection",
+            "Reflective Dialogue and Critical Reflection"
+          ]
+        },
+        {
+          title: "Advocacy and Action for Social Justice",
+          morningSession: [
+            "Introduction to Advocacy and Activism",
+            "Strategies for Advocating for Social Justice in Education"
+          ],
+          afternoonSession: [
+            "Final Project Presentations",
+            "Reflection and Closing Remarks"
+          ]
+        }
+      ],
+      isCertificated: true
+    },
+
+    {
+      img: '../assets/images/school-education/2.jpg',
+      name: '',
+      preInfo: "",
+      cost: '80 €/Day',
+      language: 'English',
+      enrolmentUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScFpK3UGE6JCdto_HpP36LXsI6UHVzyPvdhp9sF4tDsZlmcww/viewform',
+      duration: {
+        period: 'Days',
+        amount: 5
+      },
+      cities: ['Antalya', 'Bitola'],
+      description: [],
+      objectives: [],
+      methodology: [],
+      assesmentImplementation: [],
+      dailyProgram: [],
+      isCertificated: true
+    },
   ]
   schoolEducationsSubject: BehaviorSubject<EducationModel> = new BehaviorSubject<EducationModel>(this.schoolEducations[0])
   schoolEducationsObservable$: Observable<EducationModel> = this.schoolEducationsSubject.asObservable();
@@ -1154,62 +1708,62 @@ export class EducationsService {
       ],
       dailyProgram: [
         {
-            title: "Introduction to Interior Design Principles",
-            morningSession: [
-                "Welcome and Course Overview",
-                "Introduction to Interior Design Elements and Principles"
-            ],
-            afternoonSession: [
-                "Workshop: Basics of Spatial Planning and Functional Layouts",
-                "Studio Exercise: Designing a Residential Floor Plan"
-            ]
+          title: "Introduction to Interior Design Principles",
+          morningSession: [
+            "Welcome and Course Overview",
+            "Introduction to Interior Design Elements and Principles"
+          ],
+          afternoonSession: [
+            "Workshop: Basics of Spatial Planning and Functional Layouts",
+            "Studio Exercise: Designing a Residential Floor Plan"
+          ]
         },
         {
-            title: "Furniture Selection and Styling",
-            morningSession: [
-                "Understanding Furniture Styles and Trends",
-                "Workshop: Furniture Selection Criteria and Ergonomics"
-            ],
-            afternoonSession: [
-                "Field Visit: Furniture Showroom Tour and Analysis",
-                "Studio Exercise: Designing a Furniture Layout for a Living Room"
-            ]
+          title: "Furniture Selection and Styling",
+          morningSession: [
+            "Understanding Furniture Styles and Trends",
+            "Workshop: Furniture Selection Criteria and Ergonomics"
+          ],
+          afternoonSession: [
+            "Field Visit: Furniture Showroom Tour and Analysis",
+            "Studio Exercise: Designing a Furniture Layout for a Living Room"
+          ]
         },
         {
-            title: "Color Theory and Lighting Design",
-            morningSession: [
-                "Color Psychology and Its Application in Interior Design",
-                "Workshop: Basics of Lighting Design and Techniques"
-            ],
-            afternoonSession: [
-                "Case Study Analysis: Lighting Solutions for Different Interior Spaces",
-                "Studio Exercise: Creating a Mood Board for a Design Project"
-            ]
+          title: "Color Theory and Lighting Design",
+          morningSession: [
+            "Color Psychology and Its Application in Interior Design",
+            "Workshop: Basics of Lighting Design and Techniques"
+          ],
+          afternoonSession: [
+            "Case Study Analysis: Lighting Solutions for Different Interior Spaces",
+            "Studio Exercise: Creating a Mood Board for a Design Project"
+          ]
         },
         {
-            title: "Sustainable Practices and Materials",
-            morningSession: [
-                "Sustainable Design Principles and Practices",
-                "Workshop: Eco-Friendly Materials and Finishes"
-            ],
-            afternoonSession: [
-                "Guest Speaker: Sustainable Design in Furniture and Interior Spaces",
-                "Studio Exercise: Designing a Sustainable Interior Concept"
-            ]
+          title: "Sustainable Practices and Materials",
+          morningSession: [
+            "Sustainable Design Principles and Practices",
+            "Workshop: Eco-Friendly Materials and Finishes"
+          ],
+          afternoonSession: [
+            "Guest Speaker: Sustainable Design in Furniture and Interior Spaces",
+            "Studio Exercise: Designing a Sustainable Interior Concept"
+          ]
         },
         {
-            title: "Project Management and Portfolio Development",
-            morningSession: [
-                "Project Management Essentials: Budgeting and Timeline Planning",
-                "Workshop: Digital Tools for Interior Design and Furniture Prototyping"
-            ],
-            afternoonSession: [
-                "Portfolio Development: Compiling Design Projects and Client Presentations",
-                "Final Presentation: Portfolio Showcase and Reflection",
-                "Certificate Distribution and Course Evaluation"
-            ]
+          title: "Project Management and Portfolio Development",
+          morningSession: [
+            "Project Management Essentials: Budgeting and Timeline Planning",
+            "Workshop: Digital Tools for Interior Design and Furniture Prototyping"
+          ],
+          afternoonSession: [
+            "Portfolio Development: Compiling Design Projects and Client Presentations",
+            "Final Presentation: Portfolio Showcase and Reflection",
+            "Certificate Distribution and Course Evaluation"
+          ]
         }
-    ],
+      ],
       isCertificated: true
     },
   ]
